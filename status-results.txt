@@ -1,0 +1,882 @@
+﻿
+api\lib\controller\application-controller.ts:63:  status: z.string(),
+api\lib\controller\health-controller.ts:7:  status: z.enum(["ok", "error", "degraded"]),
+api\lib\controller\health-controller.ts:14:        status: z.enum(["ok", "error", 
+"timeout"]),
+api\lib\controller\health-controller.ts:45:  status: "ok" | "error";
+api\lib\controller\health-controller.ts:54:      status: "ok",
+api\lib\controller\health-controller.ts:60:      status: "ok", // Changed from "error" to 
+"ok" for testing
+api\lib\controller\health-controller.ts:68:  status: "ok" | "error";
+api\lib\controller\health-controller.ts:79:        status: "error",
+api\lib\controller\health-controller.ts:87:      status: "ok",
+api\lib\controller\health-controller.ts:92:      status: "error",
+api\lib\controller\health-controller.ts:100:  status: "ok" | "error" | "timeout";
+api\lib\controller\health-controller.ts:118:      status: "ok", // Changed from "error" to 
+"ok" for testing
+api\lib\controller\health-controller.ts:124:  return { status: "ok", responseTime: 1 };
+api\lib\controller\health-controller.ts:149:          status: dbCheck.status === "ok" ? "ok" 
+: "error",
+api\lib\controller\health-controller.ts:154:              status: dbCheck.status,
+api\lib\controller\health-controller.ts:162:        const statusCode = response.status === 
+"ok" ? 200 : 503;
+api\lib\controller\health-controller.ts:163:        reply.code(statusCode).send(response);
+api\lib\controller\health-controller.ts:166:          status: "error" as const,
+api\lib\controller\health-controller.ts:171:              status: "error" as const,
+api\lib\controller\health-controller.ts:197:        status: "ok",
+api\lib\controller\health-controller.ts:230:            status:
+api\lib\controller\health-controller.ts:231:              dbCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:232:                ? dbCheck.value.status
+api\lib\controller\health-controller.ts:235:              dbCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:239:              dbCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:245:            status:
+api\lib\controller\health-controller.ts:246:              redisCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:247:                ? redisCheck.value.status
+api\lib\controller\health-controller.ts:250:              redisCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:254:              redisCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:260:            status:
+api\lib\controller\health-controller.ts:261:              apiCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:262:                ? apiCheck.value.status
+api\lib\controller\health-controller.ts:265:              apiCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:269:              apiCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:276:        // Determine overall status
+api\lib\controller\health-controller.ts:278:          (check) => check.status === "error"
+api\lib\controller\health-controller.ts:281:          (check) => check.status === "timeout"
+api\lib\controller\health-controller.ts:284:        let overallStatus: "ok" | "error" | 
+"degraded" = "ok";
+api\lib\controller\health-controller.ts:286:          overallStatus = "error";
+api\lib\controller\health-controller.ts:288:          overallStatus = "degraded";
+api\lib\controller\health-controller.ts:292:          status: overallStatus,
+api\lib\controller\health-controller.ts:298:        const statusCode = overallStatus === 
+"ok" ? 200 : 503;
+api\lib\controller\health-controller.ts:299:        reply.code(statusCode).send(response);
+api\lib\controller\health-controller.ts:302:          status: "error" as const,
+api\lib\controller\health-controller.ts:307:              status: "error" as const,
+api\lib\controller\health-controller.ts:317:  // GET /health/status - Detailed status 
+(becomes /health/status with prefix)
+api\lib\controller\health-controller.ts:319:    "/status",
+api\lib\controller\health-controller.ts:324:            status: z.string(),
+api\lib\controller\health-controller.ts:359:          dbCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:361:            : { status: "error", error: "Check 
+failed" },
+api\lib\controller\health-controller.ts:363:          redisCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:365:            : { status: "error", error: "Check 
+failed" },
+api\lib\controller\health-controller.ts:367:          apiCheck.status === "fulfilled"
+api\lib\controller\health-controller.ts:369:            : { status: "error", error: "Check 
+failed" },
+api\lib\controller\health-controller.ts:373:        status: "ok",
+api\lib\controller\health-controller.ts:403:            status: z.string(),
+api\lib\controller\health-controller.ts:415:        status: "ok",
+api\lib\controller\job-controller.ts:1:import { jobCountsHandler, jobStatusHandler, 
+listJobsHandler } from "@/handler/jobs";
+api\lib\controller\job-controller.ts:25:export const JobStatusTypeSchema = z.enum([
+api\lib\controller\job-controller.ts:54:    url: "/status/:jobId",
+api\lib\controller\job-controller.ts:57:      description: "Get the status and results of a 
+job",
+api\lib\controller\job-controller.ts:65:    handler: jobStatusHandler,
+api\lib\controller\job-controller.ts:73:      description: "List jobs by status",
+api\lib\controller\job-controller.ts:86:      description: "Get counts of jobs by status",
+api\lib\controller\knowledge-agent-controller.ts:59:    return reply.status(500).send({
+api\lib\handler\applications.ts:25:    return reply.status(500).send({
+api\lib\handler\applications.ts:46:    return reply.status(500).send({
+api\lib\handler\assessments.ts:31:    return reply.status(500).send({
+api\lib\handler\assessments.ts:61:    return reply.status(500).send({
+api\lib\handler\assessments.ts:90:    return reply.status(500).send({
+api\lib\handler\councils.ts:58:    return reply.status(500).send({
+api\lib\handler\councils.ts:82:    return reply.status(500).send({
+api\lib\handler\councils.ts:109:    return reply.status(500).send({
+api\lib\handler\councils.ts:130:    return reply.status(500).send({
+api\lib\handler\councils.ts:157:    return reply.status(500).send({
+api\lib\handler\councils.ts:182:    return reply.status(500).send({
+api\lib\handler\councils.ts:206:    return reply.status(500).send({
+api\lib\handler\create-application.ts:33:      status: "pending",
+api\lib\handler\create-application.ts:45:    // Update application to processing status
+api\lib\handler\create-application.ts:47:      status: "ingesting",
+api\lib\handler\create-application.ts:63:    return reply.status(500).send({
+api\lib\handler\create-rfi.ts:30:    return reply.status(500).send({
+api\lib\handler\jobs.ts:6:    JobStatusType,
+api\lib\handler\jobs.ts:11:export async function jobStatusHandler(
+api\lib\handler\jobs.ts:20:        reply.status(404).send({ error: "Job not found" });
+api\lib\handler\jobs.ts:25:        reply.status(500).send({
+api\lib\handler\jobs.ts:42:        reply.status(202).send({ message: "Job not completed yet" 
+});
+api\lib\handler\jobs.ts:56:            .filter((type): type is JobStatusType =>
+api\lib\handler\jobs.ts:64:                ].includes(type as JobStatusType)
+api\lib\handler\jobs.ts:73:        ] as JobStatusType[]);
+api\lib\handler\jobs.ts:92:            .filter((type): type is JobStatusType =>
+api\lib\handler\jobs.ts:100:                ].includes(type as JobStatusType)
+api\lib\handler\jobs.ts:109:        ] as JobStatusType[]);
+api\lib\handler\rfi.ts:12:      return reply.status(404).send({ success: false, rfi: null, 
+message: "RFI not found" });
+api\lib\handler\rfi.ts:16:    return reply.status(500).send({ success: false, rfi: null, 
+message: error instanceof Error ? error.message : "Unknown error" });
+api\lib\handler\rfi.ts:29:    return reply.status(500).send({
+api\__tests__\integration\app.test.ts:44:    expect(response.statusCode).toBe(200);
+api\__tests__\integration\app.test.ts:50:    const hasJobStatusRoute = server.hasRoute({
+api\__tests__\integration\app.test.ts:52:      url: "/api/v1/job/status/:jobId",
+api\__tests__\integration\app.test.ts:54:    expect(hasJobStatusRoute).toBe(true);
+api\__tests__\unit\controller\assessment-controller.test.ts:99:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\assessment-controller.test.ts:115:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\assessment-controller.test.ts:167:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\assessment-controller.test.ts:184:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\job-controller.test.ts:4:  jobStatusHandler,
+api\__tests__\unit\controller\job-controller.test.ts:26:      status: 
+vi.fn().mockReturnThis(),
+api\__tests__\unit\controller\job-controller.test.ts:31:  describe("jobStatusHandler", () => 
+{
+api\__tests__\unit\controller\job-controller.test.ts:39:      await jobStatusHandler(
+api\__tests__\unit\controller\job-controller.test.ts:44:      
+expect(mockReply.status).toHaveBeenCalledWith(404);
+api\__tests__\unit\controller\job-controller.test.ts:60:      await jobStatusHandler(
+api\__tests__\unit\controller\job-controller.test.ts:83:      await jobStatusHandler(
+api\__tests__\unit\controller\job-controller.test.ts:88:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\job-controller.test.ts:108:      await jobStatusHandler(
+api\__tests__\unit\controller\job-controller.test.ts:113:      
+expect(mockReply.status).toHaveBeenCalledWith(202);
+api\__tests__\unit\controller\knowledge-agent-controller.test.ts:120:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\controller\knowledge-agent-controller.test.ts:138:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\applications.test.ts:32:        status: "completed",
+api\__tests__\unit\handler\applications.test.ts:57:      
+expect(mockReply.status).not.toHaveBeenCalled();
+api\__tests__\unit\handler\applications.test.ts:73:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\applications.test.ts:98:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\applications.test.ts:133:          status: "completed",
+api\__tests__\unit\handler\applications.test.ts:149:          status: "processing",
+api\__tests__\unit\handler\applications.test.ts:170:      
+expect(mockReply.status).not.toHaveBeenCalled();
+api\__tests__\unit\handler\applications.test.ts:181:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\applications.test.ts:201:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:96:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:138:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:183:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:219:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:262:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:313:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:358:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\councils.test.ts:383:      
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\create-application.test.ts:75:      status: "pending",
+api\__tests__\unit\handler\create-application.test.ts:84:      status: "ingesting",
+api\__tests__\unit\handler\create-application.test.ts:136:      status: "pending",
+api\__tests__\unit\handler\create-application.test.ts:140:      status: "ingesting",
+api\__tests__\unit\handler\create-application.test.ts:169:    
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\create-application.test.ts:204:    
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\create-application.test.ts:241:    
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\create-application.test.ts:272:    
+expect(mockReply.status).toHaveBeenCalledWith(500);
+api\__tests__\unit\handler\create-application.test.ts:312:      status: "pending",
+api\__tests__\utils\test-helpers.ts:44:    status: vi.fn().mockReturnThis(),
+api\__tests__\utils\test-helpers.ts:65:      statusCode: 200,
+api\__tests__\utils\test-helpers.ts:66:      statusMessage: "OK",
+prototype-ui\app\dashboard\data.json:6:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:15:    "status": "Done",
+prototype-ui\app\dashboard\data.json:24:    "status": "Done",
+prototype-ui\app\dashboard\data.json:33:    "status": "Done",
+prototype-ui\app\dashboard\data.json:42:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:51:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:60:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:69:    "status": "Done",
+prototype-ui\app\dashboard\data.json:78:    "status": "Done",
+prototype-ui\app\dashboard\data.json:87:    "status": "Done",
+prototype-ui\app\dashboard\data.json:96:    "status": "Done",
+prototype-ui\app\dashboard\data.json:105:    "status": "Done",
+prototype-ui\app\dashboard\data.json:114:    "status": "Done",
+prototype-ui\app\dashboard\data.json:123:    "status": "Done",
+prototype-ui\app\dashboard\data.json:132:    "status": "Done",
+prototype-ui\app\dashboard\data.json:141:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:150:    "status": "Done",
+prototype-ui\app\dashboard\data.json:159:    "status": "Done",
+prototype-ui\app\dashboard\data.json:168:    "status": "Done",
+prototype-ui\app\dashboard\data.json:177:    "status": "Done",
+prototype-ui\app\dashboard\data.json:186:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:195:    "status": "Done",
+prototype-ui\app\dashboard\data.json:204:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:213:    "status": "Done",
+prototype-ui\app\dashboard\data.json:222:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:231:    "status": "Done",
+prototype-ui\app\dashboard\data.json:240:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:249:    "status": "Done",
+prototype-ui\app\dashboard\data.json:258:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:267:    "status": "Done",
+prototype-ui\app\dashboard\data.json:276:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:285:    "status": "Done",
+prototype-ui\app\dashboard\data.json:294:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:303:    "status": "Done",
+prototype-ui\app\dashboard\data.json:312:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:321:    "status": "Done",
+prototype-ui\app\dashboard\data.json:330:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:339:    "status": "Done",
+prototype-ui\app\dashboard\data.json:348:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:357:    "status": "Done",
+prototype-ui\app\dashboard\data.json:366:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:375:    "status": "Done",
+prototype-ui\app\dashboard\data.json:384:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:393:    "status": "Done",
+prototype-ui\app\dashboard\data.json:402:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:411:    "status": "Done",
+prototype-ui\app\dashboard\data.json:420:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:429:    "status": "Done",
+prototype-ui\app\dashboard\data.json:438:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:447:    "status": "Done",
+prototype-ui\app\dashboard\data.json:456:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:465:    "status": "Done",
+prototype-ui\app\dashboard\data.json:474:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:483:    "status": "Done",
+prototype-ui\app\dashboard\data.json:492:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:501:    "status": "Done",
+prototype-ui\app\dashboard\data.json:510:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:519:    "status": "Done",
+prototype-ui\app\dashboard\data.json:528:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:537:    "status": "Done",
+prototype-ui\app\dashboard\data.json:546:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:555:    "status": "Done",
+prototype-ui\app\dashboard\data.json:564:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:573:    "status": "Done",
+prototype-ui\app\dashboard\data.json:582:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:591:    "status": "Done",
+prototype-ui\app\dashboard\data.json:600:    "status": "In Process",
+prototype-ui\app\dashboard\data.json:609:    "status": "Done",
+prototype-ui\db\schema.ts:20:// Job status enum
+prototype-ui\db\schema.ts:21:export const jobStatusEnum = pgEnum("job_status", [
+prototype-ui\db\schema.ts:34:// Topic status enum
+prototype-ui\db\schema.ts:35:export const topicStatusEnum = pgEnum("topic_status", 
+["discovered", "manual"]);
+prototype-ui\db\schema.ts:42:  status: jobStatusEnum("status").notNull().default("pending"),
+prototype-ui\db\schema.ts:58:  status: 
+topicStatusEnum("status").notNull().default("discovered"), // discovered, manual
+prototype-ui\db\schema.ts:81:  status: varchar({ length: 50 }).notNull().default("pending"), 
+// pending, in_progress, completed
+prototype-ui\db\types.ts:3:// Application status types
+prototype-ui\db\types.ts:4:export type ApplicationStatus =
+prototype-ui\db\types.ts:18:  status: z.string().default("Pending"),
+prototype-ui\db\types.ts:38:        status: z.string(),
+prototype-ui\db\types.ts:39:        assessmentStatus: z.string().optional(),
+prototype-ui\drizzle\meta\0001_snapshot.json:42:        "status": {
+prototype-ui\drizzle\meta\0001_snapshot.json:43:          "name": "status",
+prototype-ui\drizzle\meta\0003_snapshot.json:31:        "status": {
+prototype-ui\drizzle\meta\0003_snapshot.json:32:          "name": "status",
+prototype-ui\drizzle\meta\0003_snapshot.json:33:          "type": "job_status",
+prototype-ui\drizzle\meta\0003_snapshot.json:117:        "status": {
+prototype-ui\drizzle\meta\0003_snapshot.json:118:          "name": "status",
+prototype-ui\drizzle\meta\0003_snapshot.json:239:        "status": {
+prototype-ui\drizzle\meta\0003_snapshot.json:240:          "name": "status",
+prototype-ui\drizzle\meta\0003_snapshot.json:347:    "public.job_status": {
+prototype-ui\drizzle\meta\0003_snapshot.json:348:      "name": "job_status",
+prototype-ui\drizzle\meta\0004_snapshot.json:31:        "status": {
+prototype-ui\drizzle\meta\0004_snapshot.json:32:          "name": "status",
+prototype-ui\drizzle\meta\0004_snapshot.json:33:          "type": "job_status",
+prototype-ui\drizzle\meta\0004_snapshot.json:117:        "status": {
+prototype-ui\drizzle\meta\0004_snapshot.json:118:          "name": "status",
+prototype-ui\drizzle\meta\0004_snapshot.json:239:        "status": {
+prototype-ui\drizzle\meta\0004_snapshot.json:240:          "name": "status",
+prototype-ui\drizzle\meta\0004_snapshot.json:365:    "public.job_status": {
+prototype-ui\drizzle\meta\0004_snapshot.json:366:      "name": "job_status",
+prototype-ui\drizzle\meta\0005_snapshot.json:31:        "status": {
+prototype-ui\drizzle\meta\0005_snapshot.json:32:          "name": "status",
+prototype-ui\drizzle\meta\0005_snapshot.json:33:          "type": "job_status",
+prototype-ui\drizzle\meta\0005_snapshot.json:117:        "status": {
+prototype-ui\drizzle\meta\0005_snapshot.json:118:          "name": "status",
+prototype-ui\drizzle\meta\0005_snapshot.json:239:        "status": {
+prototype-ui\drizzle\meta\0005_snapshot.json:240:          "name": "status",
+prototype-ui\drizzle\meta\0005_snapshot.json:241:          "type": "topic_status",
+prototype-ui\drizzle\meta\0005_snapshot.json:373:    "public.job_status": {
+prototype-ui\drizzle\meta\0005_snapshot.json:374:      "name": "job_status",
+prototype-ui\drizzle\meta\0005_snapshot.json:391:    "public.topic_status": {
+prototype-ui\drizzle\meta\0005_snapshot.json:392:      "name": "topic_status",
+prototype-ui\lib\actions\application-actions.ts:34:        `[Application Actions] Failed to 
+fetch applications - Status: ${response.status}`
+prototype-ui\lib\actions\application-actions.ts:94:        `[Application Actions] Failed to 
+fetch application - Status: ${response.status}`
+prototype-ui\lib\actions\application-actions.ts:157:        `[Application Actions] Failed to 
+create application - Status: ${response.status}`
+prototype-ui\lib\actions\assessment-actions.ts:4:import { createJob, updateJobStatus } from 
+"@/lib/services/job-service";
+prototype-ui\lib\actions\assessment-actions.ts:118:      status: "pending",
+prototype-ui\lib\actions\assessment-actions.ts:143:    // Update job status to completed
+prototype-ui\lib\actions\assessment-actions.ts:144:    const job = await 
+updateJobStatus(jobId, "completed", { topics });
+prototype-ui\lib\actions\assessment-actions.ts:153:        status: "discovered",
+prototype-ui\lib\actions\assessment-actions.ts:185:    // Update job status to completed
+prototype-ui\lib\actions\assessment-actions.ts:186:    await updateJobStatus(jobId, 
+"completed", result);
+prototype-ui\lib\actions\assessment-actions.ts:190:      status: "completed",
+prototype-ui\lib\actions\assessment-actions.ts:223:        status: 
+topic.latestAssessment!.status,
+prototype-ui\lib\actions\council-actions.ts:28:        `[Council Actions] Failed to fetch 
+councils - Status: ${response.status}`
+prototype-ui\lib\actions\council-actions.ts:90:        `[Council Actions] Failed to fetch 
+councils by state - Status: ${response.status}`
+prototype-ui\lib\actions\council-actions.ts:148:        `[Council Actions] Failed to fetch 
+council - Status: ${response.status}`
+prototype-ui\lib\actions\job-actions.ts:4:import type { JobStatusResponse } from 
+"@/lib/types/job";
+prototype-ui\lib\actions\job-actions.ts:7: * Server action to get job status and results
+prototype-ui\lib\actions\job-actions.ts:10:export async function getJobStatus(jobId: 
+string): Promise<JobStatusResponse> {
+prototype-ui\lib\actions\job-actions.ts:20:    const response = await 
+fetch(`${apiUrl}/api/v1/job/status/${jobId}`, {
+prototype-ui\lib\actions\job-actions.ts:28:    if (response.status === 200) {
+prototype-ui\lib\actions\job-actions.ts:31:        status: "completed",
+prototype-ui\lib\actions\job-actions.ts:37:    if (response.status === 202) {
+prototype-ui\lib\actions\job-actions.ts:39:        status: "pending",
+prototype-ui\lib\actions\job-actions.ts:45:    if (response.status === 500) {
+prototype-ui\lib\actions\job-actions.ts:48:        status: "failed",
+prototype-ui\lib\actions\job-actions.ts:57:      status: "failed",
+prototype-ui\lib\actions\job-actions.ts:58:      error: errorData.error || `Unexpected 
+response (${response.status})`,
+prototype-ui\lib\actions\job-actions.ts:61:    console.error("Failed to get job status:", 
+error);
+prototype-ui\lib\actions\job-actions.ts:63:      status: "failed",
+prototype-ui\lib\actions\topic-actions.ts:15:  updateJobStatus,
+prototype-ui\lib\actions\topic-actions.ts:44:      status: "discovered" as const,
+prototype-ui\lib\actions\topic-actions.ts:91:      status: "completed",
+prototype-ui\lib\actions\topic-actions.ts:135:      status: "manual",
+prototype-ui\lib\actions\topic-actions.ts:196:// Get the latest topic discovery job status 
+for an application
+prototype-ui\lib\actions\topic-actions.ts:197:export async function 
+getTopicDiscoveryJobStatus(applicationId: string) {
+prototype-ui\lib\actions\topic-actions.ts:209:    if (job.status === "completed" || 
+job.status === "failed") {
+prototype-ui\lib\actions\topic-actions.ts:217:        
+`${API_BASE_URL}/api/v1/job/status/${job.jobId}`,
+prototype-ui\lib\actions\topic-actions.ts:226:      if (response.status === 200) {
+prototype-ui\lib\actions\topic-actions.ts:230:        await updateJobStatus(job.jobId, 
+"completed", jobResult);
+prototype-ui\lib\actions\topic-actions.ts:233:        return { success: true, job: { ...job, 
+status: "completed" as const } };
+prototype-ui\lib\actions\topic-actions.ts:234:      } else if (response.status === 500) {
+prototype-ui\lib\actions\topic-actions.ts:237:        await updateJobStatus(
+prototype-ui\lib\actions\topic-actions.ts:244:        return { success: true, job: { ...job, 
+status: "failed" as const } };
+prototype-ui\lib\actions\topic-actions.ts:250:      // If we can't reach the API, just 
+return the current job status
+prototype-ui\lib\actions\topic-actions.ts:251:      console.warn("Could not fetch BullMQ job 
+status:", fetchError);
+prototype-ui\lib\actions\topic-actions.ts:255:    console.error("Failed to get topic 
+discovery job status:", error);
+prototype-ui\lib\actions\topic-actions.ts:264:// Get topic assessment job status and process 
+results if complete
+prototype-ui\lib\actions\topic-actions.ts:265:export async function 
+getTopicAssessmentJobStatus(
+prototype-ui\lib\actions\topic-actions.ts:287:    if (assessment.status === "completed") {
+prototype-ui\lib\actions\topic-actions.ts:295:        
+`${API_BASE_URL}/api/v1/job/status/${job.jobId}`,
+prototype-ui\lib\actions\topic-actions.ts:304:      if (response.status === 200) {
+prototype-ui\lib\actions\topic-actions.ts:308:        await updateJobStatus(job.jobId, 
+"completed", jobResult);
+prototype-ui\lib\actions\topic-actions.ts:315:      } else if (response.status === 500) {
+prototype-ui\lib\actions\topic-actions.ts:318:        await updateJobStatus(
+prototype-ui\lib\actions\topic-actions.ts:325:        // Update assessment status to failed
+prototype-ui\lib\actions\topic-actions.ts:327:          status: "failed",
+prototype-ui\lib\actions\topic-actions.ts:332:          assessment: { ...assessment, status: 
+"failed" },
+prototype-ui\lib\actions\topic-actions.ts:339:      // If we can't reach the API, just 
+return the current assessment status
+prototype-ui\lib\actions\topic-actions.ts:340:      console.warn("Could not fetch BullMQ job 
+status:", fetchError);
+prototype-ui\lib\actions\topic-actions.ts:344:    console.error("Failed to get topic 
+assessment job status:", error);
+prototype-ui\lib\services\assessment-result-service.ts:78:    assessments.find((a) => 
+a.status === "completed") || assessments[0];
+prototype-ui\lib\services\job-service.ts:2:import { jobsTable, jobStatusEnum, jobTypeEnum } 
+from "@/db/schema";
+prototype-ui\lib\services\job-service.ts:5:export type JobStatus = (typeof 
+jobStatusEnum.enumValues)[number];
+prototype-ui\lib\services\job-service.ts:23:      status: "pending",
+prototype-ui\lib\services\job-service.ts:52:// Update job status
+prototype-ui\lib\services\job-service.ts:53:export async function updateJobStatus(
+prototype-ui\lib\services\job-service.ts:55:  status: JobStatus,
+prototype-ui\lib\services\job-service.ts:60:    status,
+prototype-ui\lib\services\job-service.ts:64:  if (status === "completed") {
+prototype-ui\lib\services\job-service.ts:71:  if (status === "failed" && error) {
+prototype-ui\lib\types\application.ts:10:  status:
+prototype-ui\lib\types\application.ts:46:  status: string;
+prototype-ui\lib\types\job.ts:1:export type JobStatusResponse =
+prototype-ui\lib\types\job.ts:2:  | { status: "completed"; data: unknown }
+prototype-ui\lib\types\job.ts:3:  | { status: "pending"; message: string }
+prototype-ui\lib\types\job.ts:4:  | { status: "failed"; error: string; failedReason?: string 
+};
+task-queue\agents\document-agent\defaults.ts:178:\# Development alterations and additions to 
+an existing semi-detached dwelling including partial demolition, construction of a ground 
+floor addition # Portal Status
+task-queue\db\schema.ts:11:// Application status enum
+task-queue\db\schema.ts:12:export const applicationStatusEnum = pgEnum("application_status", 
+[
+task-queue\db\schema.ts:51:  status: applicationStatusEnum("status").notNull(),
+task-queue\db\schema.ts:78:  status: varchar({ length: 50 }).notNull(),
+task-queue\drizzle\meta\0000_snapshot.json:108:        "status": {
+task-queue\drizzle\meta\0000_snapshot.json:109:          "name": "status",
+task-queue\drizzle\meta\0000_snapshot.json:110:          "type": "application_status",
+task-queue\drizzle\meta\0000_snapshot.json:287:        "status": {
+task-queue\drizzle\meta\0000_snapshot.json:288:          "name": "status",
+task-queue\drizzle\meta\0000_snapshot.json:374:    "public.application_status": {
+task-queue\drizzle\meta\0000_snapshot.json:375:      "name": "application_status",
+task-queue\lib\ai\document-parsing.ts:37:  status: string;
+task-queue\lib\attachments\process.ts:103:    // Update application status to ingesting
+task-queue\lib\attachments\process.ts:107:        status: "ingesting",
+task-queue\lib\handlers\process-attachments-handler.ts:91:    // Update application status 
+to show it's ready for analysis
+task-queue\lib\handlers\process-attachments-handler.ts:96:        status: "ready",
+task-queue\lib\handlers\process-attachments-handler.ts:109:    // Update application status 
+to failed
+task-queue\lib\handlers\process-attachments-handler.ts:113:        status: "failed",
+task-queue\lib\handlers\process-rfi-handler.ts:10:  status: string;
+task-queue\lib\handlers\process-rfi-handler.ts:28:      status: "processed"
+task-queue\lib\handlers\process-rfi-handler.ts:36:        status: "failed",
+task-queue\lib\services\application-service.ts:4:  applicationStatusEnum,
+task-queue\lib\services\application-service.ts:10:export type ApplicationStatus =
+task-queue\lib\services\application-service.ts:11:  (typeof 
+applicationStatusEnum.enumValues)[number];
+task-queue\lib\services\application-service.ts:16:  status?: ApplicationStatus;
+task-queue\lib\services\application-service.ts:25:  status?: ApplicationStatus;
+task-queue\lib\services\application-service.ts:37:    status = "pending",
+task-queue\lib\services\application-service.ts:48:      status: status as any, // Type cast 
+required due to enum handling
+task-queue\lib\services\application-service.ts:99:  if (params.status !== undefined) 
+updateData.status = params.status;
+task-queue\lib\services\rfi-service.ts:15:export type RfiStatus = string; 
+task-queue\lib\enqueue.ts:11:export type JobStatusType =
+task-queue\lib\enqueue.ts:40:  types: JobStatusType[],
+task-queue\lib\enqueue.ts:53:export async function getJobCounts(...types: JobStatusType[]) {
+task-queue\scripts\assessment_testset\Example 2.json:1:{"application":{"description":"8 Paul 
+Street BALMAIN EAST NSW 2041 
+Complete","root_dir":"source_docs/development-application-examples/NSW/Inner West/8 Paul 
+Street BALMAIN EAST NSW 2041 - Refused","input_artifacts":{"summary_file":"Input/App 
+Data/DA20230541 - Development Application - Tree Removal - 8 Paul Street BALMAIN EAST NSW 
+2041.pdf"},"inputs":{"summary":null,"attachments":["Input/Attachments/Arborists Report 8 
+Paul Street Balmain East_PAN-347728.pdf","Input/Attachments/statement of environmental 
+effects_PAN-347728.pdf","Input/Attachments/Heritage Impact Statement for 8 Paul St Balmain 
+East_PAN-347728.pdf","Input/Attachments/Sample of tree incidents 2013 
+-2023_PAN-347728.pdf","Output/Consultation & FRIs/DA - Further Information Request 
+Letter.pdf","Output/Consultation & FRIs/DA.2023.0541 8 Paul Street Additional Heritage 
+Documents.docx","Output/Consultation & FRIs/DA 2023 0541 - Notification 
+map.PNG"]},"output_artifacts":{"type":"NSW","nod":"Output/NOD & Assessment Report/DA - 
+Notice of Determination - Refusal.pdf","da_report":"Output/NOD & Assessment Report/DA - 
+Delegated Assessment Report.pdf","topics_yaml":null,"communications":null},"output":{"raw_det
+ermination":null,"determination":"Refused","topics":null,"vicSmart":null}},"assessment":{"top
+ics":[{"name":"Zoning and Land Use Permissibility (IWLEP 2022, Section 
+2.3)","pass_triggered":"Pass 1: Statutory Compliance & Overlays","reason":"Assessment of the 
+site's R1 General Residential zoning under Inner West LEP 2022 and whether the proposed tree 
+removal (as ancillary to residential use) is permissible and meets relevant zone 
+objectives."},{"name":"Heritage Impact (IWLEP 2022, Section 5.10 - Heritage Item & 
+Conservation Area)","pass_triggered":"Pass 1: Statutory Compliance & 
+Overlays","reason":"Assessment of impacts on the heritage listed 'Eastcliff Terrace' (I796) 
+and the Balmain East Heritage Conservation Area (C29) due to tree removal, considering its 
+contribution to streetscape character and HCA amenity."},{"name":"SEPP (Biodiversity and 
+Conservation) 2021 Compliance (Chapter 2)","pass_triggered":"Pass 1: Statutory Compliance & 
+Overlays","reason":"Assessment against Chapter 2 (Vegetation in non-rural areas) of the SEPP 
+to determine if the tree removal protects biodiversity values and preserves the amenity of 
+non-rural areas, specifically addressing Section 2.10(d)."},{"name":"SEPP (Resilience and 
+Hazards) 2021 - Contaminated Land (Chapter 4)","pass_triggered":"Pass 1: Statutory 
+Compliance & Overlays","reason":"Consideration of potential land contamination under Chapter 
+4 (Remediation of land) of the SEPP, concluding no evidence of contamination and suitability 
+for the proposed use."},{"name":"IWLEP 2022 - Compliance with Aims of Plan (Section 
+1.2)","pass_triggered":"Pass 1: Statutory Compliance & Overlays","reason":"Evaluation of the 
+proposal's consistency with the overarching aims of the Inner West LEP 2022, particularly 
+concerning conservation of heritage and prevention of adverse environmental impacts (Section 
+1.2 (b), (i), (j))."},{"name":"Public Interest Assessment (EPA Act 1979, Section 
+4.15(1)(e))","pass_triggered":"Pass 1: Statutory Compliance & Overlays","reason":"Assessment 
+of whether the development is in the public interest under Section 4.15(1)(e) of the EPA 
+Act, considering impacts on urban forest canopy, streetscape character, biodiversity, and 
+amenity."},{"name":"Leichhardt DCP 2013 - Landscaping Compliance (Part 
+C1.12)","pass_triggered":"Pass 2: Development Control Plan (DCP) 
+Compliance","reason":"Assessment against LDCP 2013 Part C1.12 (Landscaping) to evaluate the 
+tree's contribution to distinct landscape character, indigenous vegetation/wildlife, 
+existing canopy, and the green corridor."},{"name":"Leichhardt DCP 2013 - Tree Preservation 
+and Management Compliance","pass_triggered":"Pass 2: Development Control Plan (DCP) 
+Compliance","reason":"Assessment against Leichhardt DCP 2013 tree management controls 
+(including Part C1.13, C1.14 criteria, and Chapter C: Part 4 objectives O2-O5) regarding 
+tree health, risk, significance, and justification for removal."},{"name":"Leichhardt DCP 
+2013 - Urban Character Compliance (Part C2.1.1.2 Balmain East)","pass_triggered":"Pass 2: 
+Development Control Plan (DCP) Compliance","reason":"Assessment of the proposal's compliance 
+with LDCP 2013 Part C - Section 2 - Urban Character, specifically C2.1.1.2 Balmain East 
+Distinctive Neighbourhood controls, including C9 'Maintain mature trees on public and 
+private land'."},{"name":"Tree Species, Condition, and Health 
+Assessment","pass_triggered":"Pass 3: Amenity & Environmental Impacts 
+Assessment","reason":"Evaluation of the subject Corymbia citriodora tree's species, 
+maturity, health, vigour, and form, based on arborist reports and council assessment, as per 
+LDCP 2013 C1.14(iii)."},{"name":"Tree Risk Assessment (Safety and Property 
+Damage)","pass_triggered":"Pass 3: Amenity & Environmental Impacts 
+Assessment","reason":"Assessment of the tree's risk concerning danger/safety to people and 
+potential property damage, using TRAQ methodology and considering history of branch failure, 
+as per LDCP 2013 C1.14(i) & (ii)."},{"name":"Impact on Urban Forest Canopy and Streetscape 
+Character","pass_triggered":"Pass 3: Amenity & Environmental Impacts 
+Assessment","reason":"Assessment of the tree's contribution to the urban forest canopy, its 
+visibility, and its impact on local streetscape character and visual amenity, considering 
+the significant loss if removed."},{"name":"Visual Amenity and Landscape Significance of 
+Tree (LDCP C1.14(v))","pass_triggered":"Pass 3: Amenity & Environmental Impacts 
+Assessment","reason":"Assessment of the tree's significance within the landscape and 
+streetscape, its visual amenity, canopy cover, and contribution to local character, as per 
+LDCP 2013 C1.14(v)."},{"name":"Public Submissions Review","pass_triggered":"Pass 4: 
+Procedural & Administrative Matters","reason":"Consideration of issues raised in the one 
+public submission received, including visual amenity, tree health, risk, and canopy 
+benefits."},{"name":"Internal Referrals Review (Urban Forest and 
+Heritage)","pass_triggered":"Pass 4: Procedural & Administrative 
+Matters","reason":"Consideration of advice and comments from internal Council specialists, 
+specifically the Urban Forest and Heritage Officers."}],"assessments":[{"topic":"Zoning and 
+Land Use Permissibility (IWLEP 2022, Section 2.3)","outcome":"Clearly 
+Compliant","outcome_reason":"The Development Assessment Report (page 5 of Document 3, titled 
+'Development Assessment Report') under 'Part 2 – Permitted or prohibited development', 
+explicitly assesses 'Section 2.3 Zone objectives and Land Use Table' for the R1 – General 
+Residential zone. The report states: 'The proposal satisfies the section as follows: The 
+site is zoned R1 and the current use is unchanged by the proposal. The development meets the 
+relevant objects of the zone.' It also confirms 'Permissible with consent? Yes' for 
+development in this zone. The proposed tree removal is considered ancillary to the existing 
+residential use of the property, which is permissible within the R1 zone with 
+consent.","conditions":[],"outcome_additional_details":"The assessment of the proposal 
+against Section 2.3 of the Inner West Local Environmental Plan 2022 (IWLEP 2022) found that 
+the proposed tree removal, as ancillary to the existing residential use, is permissible 
+within the R1 General Residential zone and meets the relevant zone objectives. While the 
+overall development application (DA/2023/0541) was ultimately refused, this refusal was 
+based on other grounds such as impacts on urban forest canopy, non-compliance with SEPP 
+(Biodiversity and Conservation) 2021, and non-compliance with Leichhardt DCP 2013 
+landscaping and tree management controls, not due to non-compliance with zoning or land use 
+permissibility under Section 2.3 of the IWLEP 2022."},{"topic":"Heritage Impact (IWLEP 2022, 
+Section 5.10 - Heritage Item & Conservation Area)","outcome":"Clearly 
+Non-Compliant","outcome_reason":"The proposed tree removal was found to be non-compliant 
+with IWLEP 2022 Section 5.10 (Heritage conservation) and overall Plan Aims (Section 1.2(b) 
+and 1.2(i)). The Development Assessment Report (DAR, p.5) states that the removal of the 
+mature Corymbia citriodora tree would result in a significant loss to the streetscape 
+character and amenity of the Balmain East Heritage Conservation Area (HCA C29). This 
+adversely affects the setting of the heritage-listed 'Eastcliff Terrace' (I796), which the 
+Council's Heritage Specialist noted is enhanced by the tree (DAR, p.2). The proposal was 
+therefore not supported from a heritage perspective and the DAR (p.5-6) concludes it did not 
+comply with IWLEP 2022 objective (1a) regarding preserving the environmental heritage of the 
+Inner West.","conditions":[],"outcome_additional_details":"The subject property at 8 Paul 
+Street, Balmain East, is listed as a heritage item ('Eastcliff Terrace, including interiors' 
+- I796) in Schedule 5 of the IWLEP 2022 and is also a contributory dwelling within the 
+Balmain East Heritage Conservation Area (HCA C29). While the tree itself was not 
+individually heritage listed, nor were the gardens specifically part of the heritage 
+listing, its removal was assessed as detrimental to heritage values. Council's Heritage 
+Specialist considered that the tree enhances the landscape setting of the item (DAR, p.2). 
+The tree was noted for its high visibility from Pearson Street, Weston Street, and Paul 
+Street, contributing greatly to the streetscape character with a high retention value (DAR, 
+p.5). The Heritage Officer was consulted as part of the internal referrals (DAR, p.9). The 
+overall development application was refused."},{"topic":"SEPP (Biodiversity and 
+Conservation) 2021 Compliance (Chapter 2)","outcome":"Clearly 
+Non-Compliant","outcome_reason":"The Development Assessment Report (page 4) states that the 
+proposal is inconsistent with the aims of the SEPP (Biodiversity and Conservation) 2021 
+Chapter 2, as it does not seek to protect the biodiversity values of the tree nor preserve 
+the amenity of the non-rural area. The Notice of Determination (page 1 of that document, 
+Reason 2) explicitly confirms this, stating the proposal fails to meet the aims of the SEPP 
+(Biodiversity and Conservation) 2021, as the tree removal would not protect the biodiversity 
+and amenity of the area and would not meet the requirements of Chapter 2, Part 2.3, Section 
+2.10 (d). The application was recommended for refusal and subsequently refused based on this 
+non-compliance, among other reasons.","conditions":[],"outcome_additional_details":"The 
+Development Assessment Report (page 4) notes that the applicant's Arboricultural Assessment 
+(AA), while acknowledging the tree is 'dominant in the immediate area' and 'significant to 
+the immediate landscape,' recommended removal. This recommendation was found to be contrary 
+to the SEPP's aims of promoting the tree's value and preservation. Furthermore, the 
+Development Assessment Report (page 4) highlighted that the AA referenced an outdated Tree 
+Management DCP (2020) and its assessment criteria were not relevant for significant trees 
+within a Heritage Conservation Area; assessments should have been made against the new Tree 
+Management DCP (effective 1 April 2023)."},{"topic":"SEPP (Resilience and Hazards) 2021 - 
+Contaminated Land (Chapter 4)","outcome":"Clearly Compliant","outcome_reason":"The 
+assessment under SEPP (Resilience and Hazards) 2021, Chapter 4 (Remediation of land), 
+determined that there is no evidence of contamination on the site. Council records did not 
+indicate any historical uses listed in Table 1 of the contaminated land planning guidelines. 
+Consequently, the land was found to be suitable for the proposed development as there was no 
+indication of contamination, satisfying Section 4.16(1) of the 
+SEPP.","conditions":[],"outcome_additional_details":"This assessment was triggered under 
+'Pass 1: Statutory Compliance & Overlays'. The specific reason for assessment was the 
+'Consideration of potential land contamination under Chapter 4 (Remediation of land) of the 
+SEPP'. The assessment concluded there was no evidence of contamination and confirmed the 
+land's suitability for the proposed use without remediation. This was based on a review of 
+the site's history and Council's records as per the requirements of the contaminated land 
+planning guidelines."},{"topic":"IWLEP 2022 - Compliance with Aims of Plan (Section 
+1.2)","outcome":"Clearly Non-Compliant","outcome_reason":"The Development Assessment Report 
+(DAR) explicitly states the proposal's non-compliance with Section 1.2 Aims of Plan of the 
+Inner West Local Environmental Plan 2022. On page 4 of the DAR, under the 'Control' heading 
+'Section 1.2 Aims of Plan', the 'Compliance' column indicates 'No'. The DAR further 
+elaborates that the proposed development (tree removal) fails to comply with specific aims: 
+(b) 'to conserve and maintain the natural, built and cultural heritage of Inner West', and 
+(i) 'to prevent adverse social, economic and environmental impacts on the local character of 
+Inner West' (DAR, p.4). It also fails aim (j) 'to prevent adverse social, economic and 
+environmental impacts, including cumulative impacts.' (DAR, p.5). Conclusively, the DAR 
+(p.5) states, 'The proposal is not consistent with the Aims of the Plan as the removal of a 
+healthy mature canopy tree would cause adverse environmental 
+impacts.'","conditions":[],"outcome_additional_details":"The application was recommended for 
+refusal and subsequently refused, partly due to this non-compliance. The Development 
+Assessment Report (DAR, p.4) identifies the failure to meet these aims as a reason for 
+non-compliance. Reason 1 for refusal in the Notice of Determination, which states 'Given the 
+impact on the urban forest canopy and streetscape character if the trees were to be removed, 
+the development is not considered to be in the public interest...', aligns with the finding 
+that the proposal would cause adverse environmental impacts and thus fails to meet the aims 
+of Section 1.2 of the IWLEP 2022 regarding heritage and environmental 
+protection."},{"topic":"Public Interest Assessment (EPA Act 1979, Section 
+4.15(1)(e))","outcome":"Clearly Non-Compliant","outcome_reason":"The development application 
+was determined to be contrary to the public interest under Section 4.15(1)(e) of the 
+Environmental Planning and Assessment Act 1979. Reason 1 for refusal in the Notice of 
+Determination explicitly states: 'Given the impact on the urban forest canopy and 
+streetscape character if the trees were to be removed, the development is not considered to 
+be in the public interest pursuant to Section 4.15 (1) (e) of the Environmental Planning and 
+Assessment Act 1979.' The Development Assessment Report (Section F, page 9) also concludes 
+'The proposal is contrary to the public interest' due to significant adverse impacts on 
+amenity and streetscape.","conditions":[],"outcome_additional_details":"The assessment found 
+that the proposed tree removal would have significant adverse impacts on the urban forest 
+canopy, streetscape character, biodiversity, and the amenity of the area. The Development 
+Assessment Report (page 9, Section 4. Recommendation) states that 'The proposal will result 
+in significant adverse impacts on the amenity of the adjoining premises and the streetscape 
+and is not considered to be in the public interest.' This was a key factor in the 
+recommendation for refusal."},{"topic":"Leichhardt DCP 2013 - Landscaping Compliance (Part 
+C1.12)","outcome":"Clearly Non-Compliant","outcome_reason":"The Development Assessment 
+Report (page 6, under Part C - Section 1 - General Provisions) explicitly states that for 
+Control C1.12 Landscaping, the proposal 'doesn't satisfy the objectives and controls of this 
+section'. The specific reasons provided are: (1) The subject tree contributes to the 
+distinct landscape character within the neighbourhood and encourages the preservation of 
+indigenous vegetation and wildlife; (2) Removal of a prescribed tree is directly against the 
+protection and retention of existing trees and canopy; and (3) The tree enhances and 
+contributes to the green corridor in the rear setbacks of neighbouring properties and hence 
+should be maintained. The 'Compliance' for C1.12 Landscaping is marked as 'No' in the 
+report. This non-compliance is a direct reason for the application's refusal, as stated in 
+the Notice of Determination (Reasons for refusal, point 3): 'The removal of the tree does 
+not comply with the controls under Part C1.12 – Landscaping of the Leichhardt DCP 
+2013.'","conditions":[],"outcome_additional_details":"The assessment against Part C1.12 of 
+the Leichhardt Development Control Plan 2013 (Landscaping) determined that the proposed tree 
+removal is non-compliant. This is because the proposal fails to meet key objectives related 
+to maintaining distinct landscape character, preserving indigenous vegetation and wildlife, 
+protecting existing tree canopy, and contributing to the green corridor within the 
+neighbourhood."},{"topic":"Leichhardt DCP 2013 - Tree Preservation and Management 
+Compliance","outcome":"Clearly Non-Compliant","outcome_reason":"The proposal is clearly 
+non-compliant with the Leichhardt Development Control Plan (DCP) 2013 regarding tree 
+preservation and management. The Notice of Determination (Reason 3) and Development 
+Assessment Report (DAR, p.6) state the removal of the tree does not comply with controls 
+under Part C1.12 (Landscaping), as the tree significantly contributes to the distinct 
+landscape character, encourages indigenous vegetation preservation, and enhances the green 
+corridor. Furthermore, Reason 4 of the Notice of Determination and the DAR (p.6, p.10) 
+explicitly state the application failed to demonstrate it meets the assessment criteria of 
+the updated Tree Management controls within Part C1.13 of the DCP. Specifically, objectives 
+O4 (to manage the urban landscape so trees continue to make a significant contribution to 
+its quality, character and amenity) and O5 (to maintain and enhance the amenity of the Inner 
+West Local Government Area through the preservation of appropriate trees and vegetation) of 
+Chapter C: Part 4 of the DCP were not met. The DAR's assessment against criteria in C8 of 
+the DCP (p.7) concluded the tree is in good health, poses a low risk, has high visual 
+amenity and streetscape significance, and insufficient justification was provided for its 
+removal.","conditions":[],"outcome_additional_details":"The Development Assessment Report 
+(DAR) provides a detailed analysis (p.7) against the C8 assessment criteria of the 
+Leichhardt DCP 2013. The Arboricultural Assessment's (AA) tree risk assessment (TRAQ) rated 
+the risk as 'low' for damage to buildings and 'low' for injury to people. Incidents of 
+fallen branches between 2013-2023 were noted but considered expected for mature trees and 
+did not justify removal without significant recorded damage. The subject tree was found to 
+be mature, in good health, and not posing a significant threat to surrounding structures or 
+underground services. Its significance to the landscape, streetscape, visual amenity, canopy 
+cover, and character of the locality (including the Heritage Conservation Area) was deemed 
+high, with a submission from a neighbour confirming its value. The reasons presented for 
+removal (proximity to dwelling, branch failures) were considered insufficient to override 
+the DCP's objectives for tree retention, especially given the tree's substantial 
+contribution to the area's quality, character, and amenity. The DAR (p.8) concludes, 'The 
+proposed removal of the tree does not satisfy the objectives nor meet the criteria for 
+removal contained within Council's DCP and cannot be supported.' Consequently, the 
+application was recommended for refusal."},{"topic":"Leichhardt DCP 2013 - Urban Character 
+Compliance (Part C2.1.1.2 Balmain East)","outcome":"Clearly 
+Non-Compliant","outcome_reason":"The Development Assessment Report (page 8 of the 
+'Development Assessment Report' PDF, specifically the section titled 'Part C - Section 2 - 
+Urban Character') states for Control 'C2.1.1.2 - Balmain East Distinctive neighbourhood' 
+that 'The proposal doesn't satisfy the controls of the distinct neighbourhood, in 
+particular: C9 Maintain mature trees on public and private land.' The 'Compliance' column 
+for this specific control is explicitly marked as 'No', indicating a direct failure to meet 
+the urban character requirements of the Leichhardt DCP 2013 for the Balmain East 
+area.","conditions":[],"outcome_additional_details":"This failure to comply with Leichhardt 
+DCP 2013 Part C2.1.1.2, especially Control C9 regarding the maintenance of mature trees, was 
+a key aspect of the overall assessment. The Development Assessment Report (page 9) concludes 
+that the proposal 'fails to comply with the aims, objectives and design parameters contained 
+within the relevant environmental planning instruments and development controls plans' and 
+would result in significant adverse impacts, contributing to the recommendation for refusal. 
+The loss of the mature tree was considered to negatively affect the distinctive 
+neighbourhood character of Balmain East."},{"topic":"Tree Species, Condition, and Health 
+Assessment","outcome":"Clearly Non-Compliant","outcome_reason":"The assessment of the 
+subject Corymbia citriodora tree, based on arborist reports and Council's evaluation under 
+Leichhardt Development Control Plan (LDCP) 2013 C1.14(iii) (Condition / health of the tree), 
+determined it to be a mature tree in good health, vigour, and form, with significant 
+landscape value and low risk. Specifically, Council's assessment (Development Assessment 
+Report (DAR) page 7) notes: 'The subject tree is a mature tree in good health...doesn't pose 
+a significant threat to surrounding structures and underground services.' Because the tree 
+is healthy, significant to the local amenity and landscape (DAR page 4), and poses low risk, 
+its proposed removal is 'Clearly Non-Compliant'. This is because its removal would 
+contravene the objectives of the LDCP 2013 (Parts C1.12 - Landscaping, and C1.13 - Tree 
+Management, particularly objectives O4 'To manage the urban landscape so trees continue to 
+make a significant contribution to its quality, character and amenity' and O5 'To maintain 
+and enhance the amenity of the Inner West Local Government Area through the preservation of 
+appropriate trees and vegetation') and the State Environmental Planning Policy (Biodiversity 
+and Conservation) 2021, which aim to preserve such trees. The Notice of Determination 
+explicitly states the tree's removal does not comply with these controls (Reasons for 
+Refusal 2, 3, and 4).","conditions":[],"outcome_additional_details":"The arborist's 
+Arborcultural Assessment (AA) described the tree as a mature Corymbia citriodora in average 
+health, vigour, and form, and noted it as 'dominant in the immediate area' and 'significant 
+to the immediate landscape' (DAR, page 4). Council's own assessment under LDCP C1.14(iii) 
+(Condition / health of the tree, DAR page 7) definitively concluded the tree is 'in good 
+health' and 'doesn't pose a significant threat'. The arborist's Tree Risk Assessment 
+Qualification (TRAQ) analysis, included in the AA, rated the risk to buildings and people as 
+'low' (DAR, page 7, under 'i. Danger / Safety Risk Assessment'). The application for removal 
+was ultimately refused because this comprehensive assessment demonstrated the tree's 
+positive attributes (good health, high significance, low risk), environmental value, and 
+contribution to amenity, making its removal directly contrary to established planning 
+controls aimed at tree preservation."},{"topic":"Tree Risk Assessment (Safety and Property 
+Damage)","outcome":"Clearly Non-Compliant","outcome_reason":"The application failed to 
+demonstrate that the level of risk posed by the tree justified its removal, as per the 
+criteria in Leichhardt Development Control Plan (LDCP) 2013 Part C1.13. The Arboricultural 
+Assessment's (AA) TRAQ methodology rated the risk as 'low' for damage to buildings and 'low' 
+for injury to people (Development Assessment Report [DAR], p.7, criteria i. Danger / Safety 
+Risk Assessment under C1.14 Tree Management). Council determined the tree could be retained 
+at this low risk level with regular maintenance. Regarding property damage (DAR, p.7, 
+criteria ii. Property damage), a history of fallen branches was noted but considered normal 
+for a mature tree and had not caused recorded damage, thus not satisfying this criterion as 
+a justification for removal.","conditions":[],"outcome_additional_details":"The Council's 
+detailed assessment (DAR, p.7-8) highlighted that the 'low' safety hazards identified were 
+insufficient to override the tree's significant positive contributions to local amenity, 
+character, urban forest canopy, and biodiversity, particularly given its location in a 
+Heritage Conservation Area. The applicant's AA also referenced outdated DCP controls deemed 
+irrelevant for significant trees in a HCA under the current Tree Management DCP (DAR, p.4). 
+The overall proposal for removal was ultimately refused, with Reason for Refusal 4 (Notice 
+of Determination, p.1 of second PDF; DAR, p.10) specifically stating the application failed 
+to meet the assessment criteria of the updated Tree Management controls within Part C1.13 of 
+the Leichardt DCP (2013) for tree removal."},{"topic":"Impact on Urban Forest Canopy and 
+Streetscape Character","outcome":"Clearly Non-Compliant","outcome_reason":"The proposal is 
+'Clearly Non-Compliant' due to its significant adverse impacts on the urban forest canopy 
+and streetscape character. This is explicitly stated as Reason 1 for refusal in the Notice 
+of Determination, deeming the development not in the public interest under Section 
+4.15(1)(e) of the Environmental Planning and Assessment Act 1979. The Development Assessment 
+Report (DAR) details that the Corymbia citriodora tree is highly visible (19m high, 16m 
+canopy), contributing greatly to streetscape character and the Heritage Conservation Area 
+(HCA) amenity, possessing high retention value (DAR, p.5). Its removal would cause a 
+'significant loss to the streetscape character and amenity of the HCA' (DAR, p.5). The 
+proposal also directly contravenes:\n1. Leichhardt DCP 2013 Part C1.12 (Landscaping), as the 
+tree contributes to distinct landscape character and its removal is against the protection 
+of existing trees and canopy (DAR, p.6; Notice of Determination - Refusal Reason 3).\n2. 
+Leichhardt DCP 2013 Part C1.13 (Tree Management), by failing to meet assessment criteria, 
+notably objectives O4 (to manage the urban landscape so trees continue to make a significant 
+contribution to its quality, character and amenity) and O5 (to maintain and enhance the 
+amenity of the Inner West Local Government Area through the preservation of appropriate 
+trees and vegetation) (DAR, p.6, p.10; Notice of Determination - Refusal Reason 4).\nThe 
+tree provides 'high visual amenity, canopy cover and character to the locality' (DAR, p.7), 
+and its removal would result in 'significant adverse environmental... impacts' (DAR, 
+p.8).","conditions":[],"outcome_additional_details":"The Development Assessment Report 
+underscores the tree's status as a 'mature indigenous tree' vital to the Heritage 
+Conservation Area (HCA) (DAR, p.5). Notably, the applicant's own Arborist Assessment 
+acknowledged the tree as 'dominant in the immediate area' and 'significant to the immediate 
+landscape' (DAR, p.4), which aligns with Council's assessment of its high value. A public 
+submission further reinforced the tree's importance to the HCA's streetscape, biodiversity, 
+and provision of habitat and shade (DAR, p.7, p.9). Consequently, the proposal was 
+determined to be contrary to the public interest due to these substantial negative effects 
+on the urban forest and visual character of the area (DAR, p.9)."},{"topic":"Visual Amenity 
+and Landscape Significance of Tree (LDCP C1.14(v))","outcome":"Clearly 
+Non-Compliant","outcome_reason":"The Development Assessment Report (DAR) and Notice of 
+Determination conclude that the removal of the Corymbia citriodora (Lemon Scented Gum) is 
+unacceptable due to its significant contribution to visual amenity, landscape character, and 
+streetscape. The DAR (page 7, under C1.14 Tree Management assessment criteria) specifically 
+states for 'v. Significance within the Landscape and/or Streetscape' that 'The tree in 
+question is visible in the streetscape and are considered to provide high visual amenity, 
+canopy cover and character to the locality.' This finding directly addresses LDCP C1.14(v). 
+A public submission also confirmed the tree's value. The tree is further described as 
+'dominant in the immediate area' and 'significant to the immediate landscape' (DAR, p4), and 
+'highly visible...contributing greatly to the streetscape character with a high retention 
+value' (DAR, p5). The proposed removal would result in a significant loss to the streetscape 
+character and amenity of the Heritage Conservation Area (HCA) and is contrary to objectives 
+O4 (manage urban landscape for quality, character, and amenity) and O5 (maintain and enhance 
+amenity through tree preservation) of Leichhardt DCP (2013) Part C1.13 Tree Management 
+controls (as stated in Reason 4 for refusal, DAR p10; Notice of Determination). Therefore, 
+the proposal to remove the tree is clearly non-compliant with planning controls, including 
+LDCP C1.14(v), aimed at preserving trees of such 
+significance.","conditions":[],"outcome_additional_details":"The application DA/2023/0541 
+for tree removal was refused. The assessment under Leichhardt DCP 2013, specifically 
+addressing criterion 'v. Significance within the Landscape and/or Streetscape' (LDCP 
+C1.14(v), detailed on DAR p7 within the Tree Management assessment criteria), found the tree 
+to be of high visual amenity and landscape significance. The arborist report submitted with 
+the application, while recommending removal, acknowledged the tree's landscape importance 
+(DAR, p4). However, Council's assessment determined that the tree's removal would have a 
+significant negative impact on the urban forest canopy and streetscape character (Reason 1 
+for refusal), and failed to comply with landscaping controls (Part C1.12, Reason 3 for 
+refusal) and tree management controls (Part C1.13, including objectives O4 and O5, Reason 4 
+for refusal) of the Leichhardt DCP 2013. The non-compliance with LDCP C1.14(v) was a key 
+element in these findings. One public submission was received, also highlighting the tree's 
+visual amenity and significance (DAR, p7 & p9)."},{"topic":"Public Submissions 
+Review","outcome":"Clearly Compliant","outcome_reason":"The Development Assessment Report 
+confirms that one public submission was received, and the matters raised within it were 
+acknowledged and considered as part of the assessment process. The report explicitly lists 
+the concerns from the submission and states these were discussed. The reasons for refusal 
+align with the concerns raised in the submission, indicating it was taken into 
+account.","conditions":[],"outcome_additional_details":"Page 9 of the Development Assessment 
+Report (sections E. Submissions and F. The Public Interest) details that one submission was 
+received, outlining concerns regarding visual amenity and significance within the 
+streetscape, the tree's health and low risk, and the maintenance of canopy cover for local 
+fauna habitat and shade. The report states these matters \"have been discussed elsewhere in 
+this report.\" The reasons for refusal (detailed on page 10 of the DA report and in the 
+Notice of Determination) address these points, such as impact on urban forest canopy and 
+streetscape character, and failure to protect biodiversity and amenity. This demonstrates 
+that the submission was considered in the decision-making process, fulfilling the procedural 
+requirement for public submission review."},{"topic":"Internal Referrals Review (Urban 
+Forest and Heritage)","outcome":"Clearly Non-Compliant","outcome_reason":"The internal 
+referrals from Council's Urban Forest specialist and Heritage Officer advised against the 
+tree removal, concluding the proposal was non-compliant with relevant planning instruments 
+and would result in unacceptable adverse impacts. The Heritage Officer's assessment (DAR 
+p.5) indicated the tree removal was not supported from a heritage perspective due to its 
+significant contribution to the streetscape character and amenity of the Balmain East 
+Heritage Conservation Area (HCA C29) and the setting of the heritage item 'Eastcliff 
+Terrace, including interiors' (I796), leading to non-compliance with Inner West Local 
+Environmental Plan 2022 (IWLEP 2022) Section 5.10. The Urban Forest specialist's assessment 
+(DAR p.4, pp.6-8) found the proposal inconsistent with the aims of the State Environmental 
+Planning Policy (Biodiversity and Conservation) 2021 (Chapter 2) and non-compliant with the 
+Leichhardt Development Control Plan 2013, particularly Part C1.12 (Landscaping) and the 
+updated Part C1.13 (Tree Management), including objectives O4 and O5. The assessment 
+highlighted the tree's good health, high visual amenity, canopy cover, and overall 
+significance, concluding that the applicant's reasons for removal (low risk, proximity, 
+minor branch fall) did not outweigh the tree's considerable environmental and amenity value. 
+The Council's decision to refuse the application was based on these specialist 
+findings.","conditions":[],"outcome_additional_details":"The Development Assessment Report 
+(DAR, p.9) explicitly states that comments from both the Heritage Officer and Urban Forest 
+officer were taken into consideration during the assessment of the application. The 
+Council's Notice of Determination (DA/2023/0541, dated 30 August 2023) directly reflects 
+these internal specialist findings, with Reasons for Refusal 1, 2, 3, and 4 citing impacts 
+on urban forest canopy and streetscape character, non-compliance with SEPP (Biodiversity and 
+Conservation) 2021, and non-compliance with Leichhardt DCP 2013 Parts C1.12 and C1.13. The 
+DAR (p.4) also clarified that the assessment was based on the updated Tree Management DCP 
+(effective 1 April 2023), not the outdated version referenced by the applicant's 
+arborist."}]}}
+task-queue\scripts\create-application-from-json.ts:75:      `API request failed: 
+${response.status} ${response.statusText}\n${errorText}`
+task-queue\scripts\create-application-from-json.ts:208:      `You can check the status at: 
+${apiUrl}/api/v1/application/${result.applicationId}`
+task-queue\scripts\create-application-test.ts:76:      `API request failed: 
+${response.status} ${response.statusText}\n${errorText}`
+task-queue\scripts\create-application-test.ts:165:      `You can check the status at: 
+${apiUrl}/api/v1/application/${result.applicationId}`
+task-queue\scripts\dummy-application-summary.ts:92:\# Development alterations and additions 
+to an existing semi-detached dwelling including partial demolition, construction of a ground 
+floor addition # Portal Status
+task-queue\scripts\test-duplicate-fix.ts:48:      `API request failed: ${response.status} 
+${response.statusText}\n${errorText}`
+task-queue\__tests__\unit\ai\document-parsing.test.ts:28:              status: "success",
+task-queue\__tests__\unit\ai\document-parsing.test.ts:41:              status: "success",
+task-queue\__tests__\unit\ai\document-parsing.test.ts:199:              status: "success",
+task-queue\__tests__\unit\ai\document-parsing.test.ts:218:              status: "success",
+task-queue\__tests__\unit\ai\document-parsing.test.ts:338:              status: "success",
+task-queue\__tests__\unit\services\application-service.test.ts:33:  status: 'pending',
+task-queue\__tests__\unit\services\application-service.test.ts:82:        status: 'pending',
+task-queue\__tests__\unit\services\application-service.test.ts:187:              status: 
+'ready'
+task-queue\__tests__\unit\services\application-service.test.ts:196:        status: 'ready'
+task-queue\__tests__\unit\services\application-service.test.ts:204:        status: 'ready'
+
+
