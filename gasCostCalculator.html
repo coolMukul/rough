@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gas Vendor Cost Comparison Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen p-6">
+
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-slate-900">Gas Vendor Cost Comparison</h1>
+      <p class="text-slate-600">
+        Compare estimated ongoing quarterly gas costs across Western Australia suppliers, with optional one-off setup fees shown separately.
+      </p>
+    </header>
+
+    <!-- Global Controls -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- Usage Input -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <label for="dailyUsage" class="block text-sm font-semibold text-slate-700 mb-2">
+          Average Daily Gas Usage (MJ / Units per day)
+        </label>
+        <input 
+          type="number" 
+          id="dailyUsage" 
+          value="9.35" 
+          step="0.01"
+          min="0.1" 
+          max="300" 
+          class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none font-medium"
+        />
+        <p class="text-xs text-slate-500 mt-2">
+          Estimated Quarterly Consumption (91 days): <strong id="quarterlyUnits">850.85 MJ</strong>
+        </p>
+      </div>
+
+      <!-- Information Card -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-center">
+        <h3 class="text-sm font-semibold text-slate-700 mb-1">Ongoing vs. First Bill View</h3>
+        <p class="text-xs text-slate-500">
+          <strong>Total Bill (91 Days)</strong> represents your recurring quarterly usage and supply costs. One-off <strong>Setup Fees</strong> are kept separate and combined in the final column to show your estimated initial outlay.
+        </p>
+      </div>
+    </div>
+
+    <!-- Winner Banner -->
+    <div id="winnerCard" class="mb-8 p-6 bg-emerald-50 border-2 border-emerald-500 rounded-xl shadow-sm flex items-center justify-between">
+      <div>
+        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Lowest Ongoing Cost Provider
+        </span>
+        <h2 id="winnerName" class="text-2xl font-bold text-slate-900 mt-2">---</h2>
+        <p class="text-sm text-slate-600 mt-1">
+          Estimated Ongoing Total (91 Days): <strong id="winnerTotal">$0.00</strong> (incl. GST)
+        </p>
+      </div>
+      <div class="text-right">
+        <span id="winnerDaily" class="text-3xl font-extrabold text-emerald-700">$0.00</span>
+        <span class="block text-xs text-emerald-600 font-medium">per day</span>
+      </div>
+    </div>
+
+    <!-- Output Data Table -->
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+            <tr>
+              <th class="p-4">Vendor</th>
+              <th class="p-4">Plan Name</th>
+              <th class="p-4 w-28">Discount (%)</th>
+              <th class="p-4 text-right">Usage Cost</th>
+              <th class="p-4 text-right">Supply & Fees</th>
+              <th class="p-4 text-right">Discount Total</th>
+              <th class="p-4 text-right">GST (10%)</th>
+              <th class="p-4 text-right font-bold text-blue-900 bg-slate-200/50">Total Bill (91 Days)</th>
+              <th class="p-4 w-44 text-center">Setup Fee (One-Off)</th>
+              <th class="p-4 text-right font-bold">First Bill Total</th>
+            </tr>
+          </thead>
+          <tbody id="vendorTableBody" class="divide-y divide-slate-200">
+            <!-- Dynamic calculation rows populate here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const BILLING_DAYS = 91;
+
+    // Vendor Configuration Data Model
+    const VENDOR_PLANS = [
+      {
+        id: 'agl-savers',
+        vendorName: 'AGL',
+        planName: 'Savers',
+        dailySupplyExclGst: 0.2410,
+        dailyAccountFeeExclGst: 0,
+        fixedAccountFeeExclGst: 12.48,
+        setupFeeInclGst: 0.00,
+        includeSetupFee: false,
+        tiers: [
+          { dailyLimit: 12, rateExclGst: 0.17327 },
+          { dailyLimit: null, rateExclGst: 0.15636 }
+        ],
+        currentDiscount: 30,
+        discountAppliesTo: 'usage_and_supply'
+      },
+      {
+        id: 'kleenheat-energiser',
+        vendorName: 'Kleenheat',
+        planName: 'Monthly Energiser',
+        dailySupplyExclGst: 0.2510,       // 27.61c/day incl. GST
+        dailyAccountFeeExclGst: 0.2471,   // 27.18c/day Account Fee incl. GST
+        fixedAccountFeeExclGst: 0,
+        setupFeeInclGst: 14.50,
+        includeSetupFee: true,
+        tiers: [
+          { dailyLimit: 12, rateExclGst: 0.17327 },
+          { dailyLimit: null, rateExclGst: 0.15627 }
+        ],
+        currentDiscount: 35,
+        discountAppliesTo: 'usage_only'
+      },
+      {
+		  id: 'alinta-fairgo40',
+		  vendorName: 'Alinta Energy',
+		  planName: 'Fair Go 40 + $100 Credit',
+		  dailySupplyExclGst: 0.2510,          // 27.61c/day incl. GST
+		  dailyAccountFeeExclGst: 0.2471,      // 27.18c/day incl. GST
+		  fixedAccountFeeExclGst: 0,
+		  setupFeeInclGst: 45.00,
+		  includeSetupFee: true,
+		  oneOffCreditInclGst: 100.00,
+		  tiers: [
+			{ dailyLimit: 12, rateExclGst: 0.17327 },  // Base tariff before 40% discount
+			{ dailyLimit: null, rateExclGst: 0.15627 } // Base tariff before 40% discount
+		  ],
+		  currentDiscount: 40,
+		  discountAppliesTo: 'usage_only'
+		},
+      {
+        id: 'engie-standard',
+        vendorName: 'ENGIE',
+        planName: 'Standard Market Plan',
+        dailySupplyExclGst: 0.2510,
+        dailyAccountFeeExclGst: 0,
+        fixedAccountFeeExclGst: 0,
+        setupFeeInclGst: 14.08,
+        includeSetupFee: true,
+        tiers: [
+          { dailyLimit: 12, rateExclGst: 0.17327 },
+          { dailyLimit: null, rateExclGst: 0.15636 }
+        ],
+        currentDiscount: 10,
+        discountAppliesTo: 'usage_only'
+      }
+    ];
+
+    // DOM Elements
+    const dailyUsageInput = document.getElementById('dailyUsage');
+    const quarterlyUnitsText = document.getElementById('quarterlyUnits');
+    const tableBody = document.getElementById('vendorTableBody');
+    const winnerName = document.getElementById('winnerName');
+    const winnerTotal = document.getElementById('winnerTotal');
+    const winnerDaily = document.getElementById('winnerDaily');
+
+    function calculate() {
+      const dailyUsage = Math.max(0, parseFloat(dailyUsageInput.value) || 0);
+      quarterlyUnitsText.textContent = `${(dailyUsage * BILLING_DAYS).toFixed(2)} MJ`;
+
+      const results = VENDOR_PLANS.map(plan => {
+        let remainingDailyUnits = dailyUsage;
+        let dailyUsageCostExclGst = 0;
+
+        // Daily Tier Allocation
+        for (const tier of plan.tiers) {
+          let unitsInTier = 0;
+          if (tier.dailyLimit !== null) {
+            unitsInTier = Math.min(remainingDailyUnits, tier.dailyLimit);
+          } else {
+            unitsInTier = remainingDailyUnits;
+          }
+          unitsInTier = Math.max(0, unitsInTier);
+          dailyUsageCostExclGst += unitsInTier * tier.rateExclGst;
+          remainingDailyUnits -= unitsInTier;
+        }
+
+        const totalUsageExclGst = dailyUsageCostExclGst * BILLING_DAYS;
+        const totalSupplyExclGst = plan.dailySupplyExclGst * BILLING_DAYS;
+        const totalAccountFeesExclGst = (plan.dailyAccountFeeExclGst * BILLING_DAYS) + plan.fixedAccountFeeExclGst;
+
+        // Ongoing Gross (Excluding Setup Fee)
+        const grossExclGst = totalUsageExclGst + totalSupplyExclGst + totalAccountFeesExclGst;
+
+        const appliedDiscount = plan.currentDiscount;
+
+        let discountableAmount = 0;
+        if (plan.discountAppliesTo === 'usage_only') {
+          discountableAmount = totalUsageExclGst;
+        } else if (plan.discountAppliesTo === 'usage_and_supply') {
+          discountableAmount = totalUsageExclGst + totalSupplyExclGst;
+        } else {
+          discountableAmount = grossExclGst;
+        }
+
+        const discountAmountExclGst = discountableAmount * (appliedDiscount / 100);
+        const netExclGst = grossExclGst - discountAmountExclGst;
+        const gstAmount = netExclGst * 0.10;
+        
+        // Ongoing Recurring Total (Excluding One-Off Setup Fee)
+        const totalInclGst = netExclGst + gstAmount;
+
+        // One-Off Setup Calculation
+        const activeSetupFeeInclGst = plan.includeSetupFee ? plan.setupFeeInclGst : 0;
+        const firstBillTotalInclGst = totalInclGst + activeSetupFeeInclGst;
+
+        return {
+          ...plan,
+          appliedDiscount,
+          totalUsageExclGst,
+          supplyAndFeesExclGst: totalSupplyExclGst + totalAccountFeesExclGst,
+          discountAmountExclGst,
+          gstAmount,
+          totalInclGst,
+          activeSetupFeeInclGst,
+          firstBillTotalInclGst,
+          dailyAverageInclGst: totalInclGst / BILLING_DAYS
+        };
+      });
+
+      // Find lowest ongoing cost provider
+      let winner = results[0];
+      results.forEach(item => {
+        if (item.totalInclGst < winner.totalInclGst) {
+          winner = item;
+        }
+      });
+
+      // Update Winner Banner
+      winnerName.textContent = `${winner.vendorName} — ${winner.planName}`;
+      winnerTotal.textContent = `$${winner.totalInclGst.toFixed(2)}`;
+      winnerDaily.textContent = `$${winner.dailyAverageInclGst.toFixed(2)}`;
+
+      // Render Table Rows
+      tableBody.innerHTML = '';
+      results.forEach(row => {
+        const isWinner = row.id === winner.id;
+        const tr = document.createElement('tr');
+        tr.className = isWinner ? 'bg-emerald-50/70 font-medium' : 'hover:bg-slate-50';
+
+        tr.innerHTML = `
+          <td class="p-4 font-bold text-slate-900 flex items-center gap-2">
+            ${row.vendorName}
+            ${isWinner ? '<span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">BEST</span>' : ''}
+          </td>
+          <td class="p-4 text-slate-600">${row.planName}</td>
+          
+          <!-- Discount Input -->
+          <td class="p-4">
+            <div class="relative w-20">
+              <input 
+                type="number" 
+                min="0" 
+                max="100" 
+                value="${row.currentDiscount}" 
+                data-vendor-id="${row.id}"
+                class="vendor-discount-input w-full px-2 py-1 pr-5 border border-slate-300 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none text-right font-medium"
+              />
+              <span class="absolute right-1.5 top-1 text-xs text-slate-400 font-bold">%</span>
+            </div>
+          </td>
+
+          <td class="p-4 text-right">$${row.totalUsageExclGst.toFixed(2)}</td>
+          <td class="p-4 text-right">$${row.supplyAndFeesExclGst.toFixed(2)}</td>
+          <td class="p-4 text-right text-emerald-600">-$${row.discountAmountExclGst.toFixed(2)}</td>
+          <td class="p-4 text-right">$${row.gstAmount.toFixed(2)}</td>
+          
+          <!-- Ongoing Quarterly Bill (Excluded from Setup Fee) -->
+          <td class="p-4 text-right font-bold text-blue-900 bg-blue-50/50">$${row.totalInclGst.toFixed(2)}</td>
+
+          <!-- Editable One-Time Setup Fee & Toggle -->
+          <td class="p-4 text-center">
+            <div class="flex items-center justify-center gap-2">
+              <input 
+                type="checkbox" 
+                ${row.includeSetupFee ? 'checked' : ''} 
+                data-vendor-id="${row.id}"
+                class="vendor-setup-checkbox h-4 w-4 text-blue-600 rounded cursor-pointer"
+                title="Include setup fee in first bill calculation"
+              />
+              <div class="relative w-24">
+                <span class="absolute left-2 top-1 text-xs text-slate-400 font-bold">$</span>
+                <input 
+                  type="number" 
+                  min="0" 
+                  step="0.01"
+                  value="${row.setupFeeInclGst.toFixed(2)}" 
+                  data-vendor-id="${row.id}"
+                  class="vendor-setup-input w-full pl-5 pr-2 py-1 border border-slate-300 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none text-right font-medium text-slate-700"
+                />
+              </div>
+            </div>
+          </td>
+
+          <!-- First Bill Total (Ongoing + One-Off Setup Fee) -->
+          <td class="p-4 text-right font-bold text-slate-900">$${row.firstBillTotalInclGst.toFixed(2)}</td>
+        `;
+        tableBody.appendChild(tr);
+      });
+
+      // Event listener: Inline discount input
+      document.querySelectorAll('.vendor-discount-input').forEach(input => {
+        input.addEventListener('input', (e) => {
+          const vendorId = e.target.getAttribute('data-vendor-id');
+          const val = Math.max(0, Math.min(100, parseFloat(e.target.value) || 0));
+          const plan = VENDOR_PLANS.find(p => p.id === vendorId);
+          if (plan) {
+            plan.currentDiscount = val;
+            calculate();
+          }
+        });
+      });
+
+      // Event listener: Setup fee checkbox toggle
+      document.querySelectorAll('.vendor-setup-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', (e) => {
+          const vendorId = e.target.getAttribute('data-vendor-id');
+          const plan = VENDOR_PLANS.find(p => p.id === vendorId);
+          if (plan) {
+            plan.includeSetupFee = e.target.checked;
+            calculate();
+          }
+        });
+      });
+
+      // Event listener: Editable setup fee dollar amount
+      document.querySelectorAll('.vendor-setup-input').forEach(input => {
+        input.addEventListener('input', (e) => {
+          const vendorId = e.target.getAttribute('data-vendor-id');
+          const val = Math.max(0, parseFloat(e.target.value) || 0);
+          const plan = VENDOR_PLANS.find(p => p.id === vendorId);
+          if (plan) {
+            plan.setupFeeInclGst = val;
+            calculate();
+          }
+        });
+      });
+    }
+
+    // Main usage input listener
+    dailyUsageInput.addEventListener('input', calculate);
+
+    // Initial Run
+    calculate();
+  </script>
+</body>
+</html>
