@@ -28,9 +28,13 @@ You are now looking at the lab. It is made of **cells** — grey boxes containin
 
 Click **File** → **Save a copy in Drive**.
 
-A new tab opens with `Copy of ...` in the title. **Work in that new tab and close the old one.**
+A new tab opens, titled **`Copy of lab.ipynb`**.
 
-> Without this, nothing you do is saved. Your copy stays in your Google Drive permanently — you can reopen it next month.
+> **Now close the tab you were in before.** You have two tabs open and they look almost identical. The old one is not yours — nothing you type there is saved, and it is easy to spend a whole session working in the wrong tab and lose it all.
+>
+> Check the title at the top left reads **`Copy of lab.ipynb`** before you go on.
+
+Your copy stays in your Google Drive permanently — you can reopen it next month.
 
 **Do not run anything yet.** The first cell needs a key, and you do not have one yet. That is the next part.
 
@@ -59,14 +63,24 @@ This is the key the lab uses to talk to the AI model. It is free and **no credit
 
 Go back to your Colab tab. Do **not** paste the key into a code cell — Colab has a proper place for it.
 
-1. On the **far left edge** of the screen, find the **🔑 key icon** and click it. The panel is called **Secrets**.
+1. On the **far left edge** of the screen, click the **🔑 key icon**. The panel is called **Secrets**.
 2. Click **+ Add new secret**.
-3. In **Name**, type exactly: `LLM_API_KEY`
-   - All capitals, one underscore. Type it rather than guessing.
-4. In **Value**, paste your `gsk_...` key.
-5. Turn **on** the toggle in the **Notebook access** column.
+3. A row appears with four columns. Fill in the middle two, then switch on the first:
 
-> Two things fail here more than anything else: **a space at either end of the pasted key**, and **forgetting the Notebook access toggle**. Check both.
+| Column | What to do |
+|---|---|
+| **Name** | Type `LLM_API_KEY` — all capitals, two underscores |
+| **Value** | Paste your `gsk_...` key |
+| **Notebook access** | **Click the toggle so it turns on** |
+| Actions | Leave alone |
+
+### The two things that go wrong here
+
+**The Notebook access toggle starts OFF.** It shows a grey ✕ until you click it. Leave it off and the notebook cannot see your key — Setup fails at stage 4 even though the secret looks saved. This is the single most common failure.
+
+**The Name box is narrow and hides the end of what you typed.** It can display `LLM_API` whether or not you typed the whole thing. Click into the box and press `End` to check. It must read `LLM_API_KEY` exactly — close is not good enough.
+
+**Also watch for a space** at either end of the pasted key. That produces a `401 unauthorised` later, not an obvious error here.
 
 ---
 
