@@ -44,6 +44,9 @@ sys.path.insert(0, str(ROOT))
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--quick", action="store_true", help="skip the full eval sweep")
+parser.add_argument("--upto", type=int, default=99, metavar="N",
+                    help="stop after step N, for working through the flow "
+                         "a piece at a time (e.g. --upto 8)")
 parser.add_argument("--delay", type=float, default=2.5,
                     help="seconds to wait between API calls; free tiers are "
                          "usually 30 requests/minute, so 2.5 stays under it")
@@ -51,6 +54,11 @@ ARGS, _ = parser.parse_known_args()
 
 
 def banner(n, title):
+    if n > ARGS.upto:
+        print(f"\n{'=' * 74}")
+        print(f"Stopped after step {ARGS.upto}, as asked. {_calls} API calls.")
+        print(f"{'=' * 74}")
+        raise SystemExit(0)
     print(f"\n{'=' * 74}\nSTEP {n} - {title}\n{'=' * 74}")
 
 
