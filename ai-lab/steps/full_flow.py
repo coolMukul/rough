@@ -25,6 +25,15 @@ import sys
 import time
 from pathlib import Path
 
+# Model output contains characters cp1252 cannot encode (narrow no-break
+# space, curly quotes). Without this a Windows console crashes on printing a
+# perfectly good answer.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except (AttributeError, ValueError):
+    pass
+
 os.environ.setdefault("HF_HUB_DISABLE_PROGRESS_BARS", "1")
 os.environ.setdefault("TRANSFORMERS_VERBOSITY", "error")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
@@ -35,6 +44,9 @@ sys.path.insert(0, str(ROOT))
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--quick", action="store_true", help="skip the full eval sweep")
+parser.add_argument("--delay", type=float, default=2.5,
+                    help="seconds to wait between API calls; free tiers are "
+                         "usually 30 requests/minute, so 2.5 stays under it")
 ARGS, _ = parser.parse_known_args()
 
 
@@ -66,9 +78,21 @@ MODEL = resolve_model(API_KEY, verbose=True)
 _calls = 0
 
 
+_last_call = 0.0
+
+
 def chat(messages, temperature=0, retries=4):
     """Send a list of messages, get back the assistant's text. That is the whole API."""
-    global _calls
+    global _calls, _last_call
+
+    # Free tiers rate-limit per minute. Spacing calls out is far cheaper than
+    # being throttled and retrying, and it keeps a shared key usable when a
+    # room full of people is hitting the same provider.
+    gap = time.time() - _last_call
+    if gap < ARGS.delay:
+        time.sleep(ARGS.delay - gap)
+    _last_call = time.time()
+
     for attempt in range(retries):
         response = requests.post(
             BASE_URL,
@@ -99,12 +123,29 @@ print(f"key:   ...{API_KEY[-4:]}")
 # ===========================================================================
 banner(1, "The model is stateless")
 
-show("ask", chat([{"role": "user", "content": "In one sentence, what is a university?"}]))
-show("now ask what we just said",
-     chat([{"role": "user", "content": "What did I just ask you?"}]))
+# Do NOT ask "what did I just ask you?" here. The model reads that as being
+# about the message it is currently holding and answers it correctly, which
+# looks exactly like memory and teaches the opposite of the point.
+# Telling it a fact and asking for it back in a separate call cannot be
+# answered from the message alone, so the failure is unambiguous.
+show("call 1 - tell it something",
+     chat([{"role": "user", "content": "My roll number is 24BCE0142. Remember it."}]))
 
-print("There is no session and no memory. Each call is independent.")
-print("Everything that feels like conversation is a list your code re-sends.")
+show("call 2 - a brand new call, ask for it back",
+     chat([{"role": "user", "content": "What is my roll number?"}]))
+
+print("It cannot answer. There is no session and no memory on the server.")
+print("Now the same question, with the earlier turns re-sent by hand:\n")
+
+show("call 3 - we resend the history ourselves", chat([
+    {"role": "user", "content": "My roll number is 24BCE0142. Remember it."},
+    {"role": "assistant", "content": "Noted, your roll number is 24BCE0142."},
+    {"role": "user", "content": "What is my roll number?"},
+]))
+
+print("That is the entire mechanism of 'conversation': a Python list your code")
+print("re-sends on every call. Memory is something you implement, not something")
+print("the model has.")
 
 
 # ===========================================================================

@@ -76,7 +76,13 @@ def list_models(key, base_url=None, explain=False):
     """
     base = (base_url or os.environ.get("LLM_BASE_URL", DEFAULT_BASE))
     url = base.split("/chat/completions")[0].rstrip("/") + "/models"
-    request = urllib.request.Request(url, headers={"Authorization": "Bearer " + key})
+
+    # A User-Agent is not optional here. Groq sits behind Cloudflare, which
+    # rejects urllib's default "Python-urllib/3.x" signature with a 403 and
+    # error 1010 - which reads exactly like a permissions problem and is not.
+    headers = {"Authorization": "Bearer " + key,
+               "User-Agent": "ai-in-industry-lab/1.0"}
+    request = urllib.request.Request(url, headers=headers)
 
     def note(message):
         if explain:
