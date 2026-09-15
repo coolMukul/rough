@@ -6,20 +6,48 @@ Nothing installs on your own computer. Everything runs on Google's servers. A sl
 
 ---
 
-## Part 1 — Get a free API key (5 minutes)
+## Part 1 — Open the lab in Google Colab (5 minutes)
 
-You need a key to talk to the AI model. It is free and **no credit card is required.**
+Google Colab runs Python in your browser. Nothing installs on your machine.
 
-1. Open **<https://console.groq.com>** in your browser.
-2. Click **Sign in** and choose **Continue with Google**. Use any Google account.
-3. Once you are signed in, look at the menu on the left and click **API Keys**.
-4. Click the **Create API Key** button.
+### 1.1 — Sign in to Google
+
+Open **<https://colab.research.google.com>**. If it asks you to sign in, use any Google account.
+
+If a pop-up appears saying "Open notebook", close it with **Cancel** or the **X**.
+
+### 1.2 — Open the lab notebook
+
+Click this link. It opens straight in Colab — you do not need a GitHub account.
+
+**<https://colab.research.google.com/github/coolMukul/rough/blob/main/ai-lab/lab.ipynb>**
+
+You are now looking at the lab. It is made of **cells** — grey boxes containing code, white boxes containing instructions.
+
+### 1.3 — Make your own copy — do not skip this
+
+Click **File** → **Save a copy in Drive**.
+
+A new tab opens with `Copy of ...` in the title. **Work in that new tab and close the old one.**
+
+> Without this, nothing you do is saved. Your copy stays in your Google Drive permanently — you can reopen it next month.
+
+**Do not run anything yet.** The first cell needs a key, and you do not have one yet. That is the next part.
+
+---
+
+## Part 2 — Get a free API key (5 minutes)
+
+This is the key the lab uses to talk to the AI model. It is free and **no credit card is required.**
+
+1. Open **<https://console.groq.com>** in a new tab.
+2. Click **Sign in** → **Continue with Google**. Any Google account works.
+3. In the menu on the left, click **API Keys**.
+4. Click **Create API Key**.
 5. Give it any name — type `lab` — and click **Submit**.
 6. A long string starting with `gsk_` appears. **Click the copy button now.**
 
-> **This is the one thing you cannot undo.** The key is shown only once. If you close the box without copying it, delete that key and create another one. That is fine and costs nothing.
-
-7. Paste it somewhere you can get it back from — a note on your phone, a text file, a WhatsApp message to yourself.
+> **This is the one thing you cannot undo.** The key is shown only once. If you close the box without copying it, delete that key and create another. That is free and takes ten seconds.
 
 **What a key looks like:** `gsk_` followed by about 50 letters and numbers. If yours does not start with `gsk_`, you copied the wrong thing.
 
@@ -27,87 +55,46 @@ You need a key to talk to the AI model. It is free and **no credit card is requi
 
 ---
 
-## Part 2 — Open the lab in Google Colab (10 minutes)
+## Part 3 — Store the key in Colab (2 minutes)
 
-Google Colab runs Python in your browser. You do not install anything.
+Go back to your Colab tab. Do **not** paste the key into a code cell — Colab has a proper place for it.
 
-### 2.1 — Sign in to Google
-
-Open **<https://colab.research.google.com>**. If it asks you to sign in, use the same Google account as before.
-
-If you see a pop-up saying "Open notebook", close it with the **Cancel** button or the **X**.
-
-### 2.2 — Open the lab notebook
-
-Click this link. The notebook opens straight in Colab — you do not need a GitHub account.
-
-**<https://colab.research.google.com/github/coolMukul/rough/blob/main/ai-lab/lab.ipynb>**
-
-
-You are now looking at the lab. It is made of **cells** — grey boxes containing code, and white boxes containing instructions.
-
-### 2.3 — Make your own copy — do not skip this
-
-At the top of the screen, click **File** → **Save a copy in Drive**.
-
-A new tab opens with `Copy of ...` in the title. **Work in this new tab and close the old one.**
-
-> Without this step, nothing you type is saved. Your copy stays in your Google Drive permanently — you can come back to it next month.
-
-### 2.4 — Learn the one control you need
-
-Hover your mouse over the first grey code cell. A **▶ play button** appears on its left. Click it.
-
-That runs the cell. A spinner turns while it works, then output appears underneath.
-
-**Keyboard shortcut:** `Shift + Enter` runs the cell you are in and moves to the next one. You will use this constantly.
-
-> The **first** cell you run takes 20–30 seconds, because Colab is starting a machine for you. Later cells are much faster. This is normal — do not click the button repeatedly.
-
-### 2.5 — Store your API key in Colab
-
-Do **not** paste your key directly into a code cell. Colab has a proper place for it.
-
-1. On the far left edge of the screen, find the **🔑 key icon** and click it. The panel is called **Secrets**.
+1. On the **far left edge** of the screen, find the **🔑 key icon** and click it. The panel is called **Secrets**.
 2. Click **+ Add new secret**.
-3. In the **Name** box type exactly: `LLM_API_KEY`
-   - All capitals, with underscores. Copy and paste it to be safe.
-4. In the **Value** box, paste your `gsk_...` key.
+3. In **Name**, type exactly: `LLM_API_KEY`
+   - All capitals, one underscore. Type it rather than guessing.
+4. In **Value**, paste your `gsk_...` key.
 5. Turn **on** the toggle in the **Notebook access** column.
 
-> **The single most common mistake** is a space at the start or end of the pasted key. If your key fails later, delete the secret and paste it again carefully.
-
-### 2.6 — Run the setup cell
-
-Find the cell near the top labelled **Setup** and run it. It downloads the lab files and installs what is needed.
-
-**It takes 2–3 minutes the first time.** It is downloading a small language model. Let it finish — you will see `All checks passed` at the end.
-
-You are done. **Do not close the tab without checking your copy is in Drive.**
+> Two things fail here more than anything else: **a space at either end of the pasted key**, and **forgetting the Notebook access toggle**. Check both.
 
 ---
 
-## The documents we will use
+## Part 4 — Run the Setup cell (3 minutes)
 
-The lab answers questions about **your own B.Tech academic regulations**. You do not need to download anything for the session — the text is already bundled in the repo — but keep the PDF open in another tab so you can check the answers yourself.
+Now you can run something.
 
-That habit is the whole point: an answer you cannot verify is not an answer.
+Scroll to the grey cell labelled **Setup**. Hover over it and a **▶ play button** appears on its left. Click it.
 
-| Regulation | Applies to | PDF |
-|---|---|---|
-| **R22.1** | 2022–2024 admissions — **most likely yours** | [download](https://vignan.ac.in/2023pdf/R22.1-B.Tech%20Regulations.pdf) |
-| R25 | 2025 admissions | [download](https://vignan.ac.in/2023pdf/R25_Regulations%20Final%20For%20BTech.pdf) |
-| R26 | 2026 admissions | [download](https://vignan.ac.in/2023pdf/R26_Regulations_B.Tech.pdf) |
+> **Keyboard shortcut:** `Shift + Enter` runs the cell you are in and moves to the next. You will use this constantly during the session.
 
-All of them are listed on the university's own page: <https://vignan.ac.in/newvignan/Regulations.php>
+The cell downloads the lab files, installs what is needed, and checks everything. It prints five numbered stages.
 
-> Not sure which applies to you? Ask your department. It changes very little here — the rules this lab uses (75% attendance, 10% condonation, 60:40 marks split, 160 credits) are **identical in all three**.
+**It takes 2–3 minutes the first time and will look frozen during stage 3.** It is downloading a small language model. Let it finish — do not click the button again.
+
+You want it to end with:
+
+```
+  READY. Took 154 seconds.
+```
+
+If a stage fails, it prints the specific fix underneath. Follow that, then run the cell again.
 
 ---
 
-## Part 3 — Check it worked
+## Part 5 — Check it worked
 
-Run the check cell:
+The Setup cell already ran this for you. To run it again at any time:
 
 ```python
 !python verify_setup.py
@@ -130,6 +117,26 @@ You want to see seven `PASS` lines:
 If anything says `FAIL`, the message underneath tells you what to fix. See the table at the bottom of this page.
 
 **That is the whole setup. Stop here.** You do not need to understand the code yet — that is what the session is for.
+
+---
+
+## The documents we will use
+
+*(Reference — nothing to install.)*
+
+The lab answers questions about **your own B.Tech academic regulations**. You do not need to download anything for the session — the text is already bundled in the repo — but keep the PDF open in another tab so you can check the answers yourself.
+
+That habit is the whole point: an answer you cannot verify is not an answer.
+
+| Regulation | Applies to | PDF |
+|---|---|---|
+| **R22.1** | 2022–2024 admissions — **most likely yours** | [download](https://vignan.ac.in/2023pdf/R22.1-B.Tech%20Regulations.pdf) |
+| R25 | 2025 admissions | [download](https://vignan.ac.in/2023pdf/R25_Regulations%20Final%20For%20BTech.pdf) |
+| R26 | 2026 admissions | [download](https://vignan.ac.in/2023pdf/R26_Regulations_B.Tech.pdf) |
+
+All of them are listed on the university's own page: <https://vignan.ac.in/newvignan/Regulations.php>
+
+> Not sure which applies to you? Ask your department. It changes very little here — the rules this lab uses (75% attendance, 10% condonation, 60:40 marks split, 160 credits) are **identical in all three**.
 
 ---
 
