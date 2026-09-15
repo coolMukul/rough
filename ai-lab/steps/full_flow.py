@@ -408,6 +408,23 @@ print("Authorisation belongs in the tool, never in the prompt.")
 # ===========================================================================
 banner(11, "Score it")
 
+# Ground truth, verified by hand against the R22.1 PDF. Clause references are
+# kept so any disputed answer can be settled from the source in seconds.
+#
+#   1  not less than 75% of aggregate L, T, P sessions        clause 4
+#   2  160 credits                                            clause 11(c)
+#   3  may be condoned - 68% is inside the 10% range and      clause 4 + 4(b)
+#      placement activity is a listed ground
+#   4  R grade (18 < 21, the 35% formative minimum), and      clause 5.2(ii) + 4(e)
+#      R-grade students may not sit the summative assessment
+#   5  not in the regulations - a refusal is correct          -
+#   6  not in the regulations - a refusal is correct          -
+#   7  yes, condonation up to 10% on listed grounds           clause 4(b)
+#   8  21 out of 60                                           clause 5.2(ii)
+#   9  YES - the rule is "not less than 75%", so exactly       clause 4
+#      75% passes. A boundary question on purpose.
+#  10  First Class with Distinction - the band is             clause 10, Table 11
+#      "7.0 and above". Also a boundary on purpose.
 EVAL = [
     ("What is the minimum attendance required in each course?", "75", "lookup"),
     ("How many credits are required for the award of the B.Tech degree?", "160", "lookup"),
