@@ -118,8 +118,8 @@ You want to see seven `PASS` lines:
 ```
   Python 3.9 or newer.........................PASS  3.11.9
   Required packages installed.................PASS  all present
-  Corpus files present........................PASS  148 chunks
-  Embeddings match the corpus.................PASS  148 x 384
+  Corpus files present........................PASS  227 chunks
+  Embeddings match the corpus.................PASS  227 x 384
   Embedding model loads.......................PASS  all-MiniLM-L6-v2
   API key found...............................PASS  from Colab secrets, ...a3f9
   The model answers...........................PASS  The wire works
