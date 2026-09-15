@@ -1,0 +1,10 @@
+# Lab dependencies. Colab already has requests, numpy and scikit-learn;
+# only sentence-transformers and python-dotenv actually install there.
+requests>=2.31
+numpy>=1.24
+scikit-learn>=1.3
+sentence-transformers>=2.6
+python-dotenv>=1.0
+
+# Maintainer-only: needed by tools/build_corpus.py, not by the lab itself.
+pypdf>=4.0

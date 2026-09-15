@@ -1,0 +1,10 @@
+{
+ "source_pdf": "VFSTR-R22.1-BTech-Regulations.pdf",
+ "source_sha256": "be0d9c3bafbbc184",
+ "built": "2026-09-15",
+ "chunk_count": 227,
+ "target_chars": 700,
+ "max_chars": 1100,
+ "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "embedding_dim": 384
+}

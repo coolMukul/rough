@@ -1,0 +1,1364 @@
+[
+ {
+  "id": "c000",
+  "page": 8,
+  "section": "General",
+  "text": "[General] ACADEMIC REGULATIONS, CURRICULUM AND COURSE CONTENTS EXECUTIVE ABSTRACT R22 - Academic regulations, Curriculum and course contents, is an articulation of the VFSTR deemed to be University's commitment towards NEP -2020, with a view that it enables student(s) to maintain the spirit of continuous learning and continuous assessmen t to replace the normal tendency of preparing just before a test or an examination."
+ },
+ {
+  "id": "c001",
+  "page": 8,
+  "section": "General",
+  "text": "[General] The proposed framework accomplishes multi -disciplinary holistic education, continuous assessment along with honorable exit options if a student falls short to complete the requirements to earn the degree within the stipulated period including the permissible spill over period. R22 is oriented towards multi -disciplinary holistic education at the undergraduate level that includes integrated and rigorous exposure to science, humanities, management, and professional domains, as well as sufficient flexibility in curricular structures that allow students to choose electives from the same and other disciplines."
+ },
+ {
+  "id": "c002",
+  "page": 8,
+  "section": "General",
+  "text": "[General] Such holistic and diverse education will assist the candidate in transforming into all-rounded persons. Similarly, in line with NEP- 2020, more weight will be given to continuous/ formative assessment, which is an Integrated learning model comprising Learning – Thinking – Understanding – Skilling – Applying – Creating. Emphasis on continuous formative assessment with a creative summative assessment will facilitate the candidate to \"Move away from high stake examinations – towards more continuous and comprehensive evaluation\". The B.Tech."
+ },
+ {
+  "id": "c003",
+  "page": 8,
+  "section": "General",
+  "text": "[General] degree offered will be for four years' (8 semesters) duration with lateral entry and honorable exit options within this period, with suitable certifications that will enable the candidate to have a professional career and as well as serve as a reminder to return and update his / her qualificat ion in the future. Following three years of study and the completion of the required credits, an Engineering diploma or a Bachelor's degree will be conferred. However, the intention of the learners is not to join for the award of the diploma / degree with lateral exit, but to acquire a B.Tech. degree which offers add -on certifications such as Honours/ Minor/ Add-on Diploma."
+ },
+ {
+  "id": "c004",
+  "page": 8,
+  "section": "General",
+  "text": "[General] Salient features of the regulation - Multidisciplinary - Continuous learning - Continuous assessment - Honours/ Research Honours / Minor / Add-on Diploma / Add-on Certification - Lateral entry and honorable exit options - Sabbatical Semester Drop option to pursue innovation, incubation, entrepreneurial and advanced exploratory activities and subsequent re-entry - Dual B.Tech. + M. Tech."
+ },
+ {
+  "id": "c005",
+  "page": 8,
+  "section": "General",
+  "text": "[General] / MBA degree of 5 years - Credit earning by credit transfer 1 INTRODUCTION This document contains the academic regulations, scheme of assessments, curriculum, detailed syllabi, course contents with text / reference books recommended, course outcomes, skills acquired and the projects / assignments that are to be performed for each course for the conduct of 4-year B.Tech. degree programmes. The various B.Tech. degree programmes under different schools in VFSTR are as listed below. The 2-character codes indicated in parentheses are their branch discipline codes. I. School of Agriculture and Food Technology - Agriculture Engineering (AG) - Food Technology (FT) II."
+ },
+ {
+  "id": "c006",
+  "page": 8,
+  "section": "General",
+  "text": "[General] School of Biotechnology and Pharmaceutical Sciences - Bioinformatics (BI) - Biotechnology (BT) III. School of Computing and Informatics - Computer Science and Engineering (CS) - Computer Science and Engineering - Artificial Intelligence and Machine Learning (AI) - Computer Science and Business Systems (CB) - Computer Science and Engineering - Cyber Security (CY) - Computer Science and Engineering – Data Science (DS) - Computer Science and Engineering – Internet of Things (CI) - Information Technology (IT) IV."
+ },
+ {
+  "id": "c007",
+  "page": 8,
+  "section": "General",
+  "text": "[General] School of Core Engineering - Chemical Engineering (CH) - Civil Engineering (CE) - Mechanical Engineering (ME) - Robotics and Automation (RA) - Textile Technology (TT) V. School of Electrical, Electronics and Communication Engineering - Biomedical Engineering (BM) - Electrical and Electronics Engineering (EE) - Electronics and Communication Engineering (EC) - Electronics Engineering - VLSI Design and Technology (VL)"
+ },
+ {
+  "id": "c008",
+  "page": 10,
+  "section": "General",
+  "text": "[General] 1.1 Definition For the purpose of R22 regulation, definitions as follows shall apply: - \"Degree\" shall refer to the B.Tech. Degree Program. - \"Course\" shall refer to such Course(s) for which a student shall earn Credits after due assessment as per the laid provisions. Project is also treated as a Course. - \"Academic activities \" shall refer to the activities like Lecture (Physical Lecture Session), Tutorial (Participatory discussion / Self-Study / Desk Work / Quiz / Seminar Presentation, etc."
+ },
+ {
+  "id": "c009",
+  "page": 10,
+  "section": "General",
+  "text": "[General] activities that make the student absorb & assimilate, the delivered contents effectively) and Practical / Practice sessions (includes Hands on Experience / Lab experiments / Field Studies / Case Studies etc. activities that enable the student to acquire the requisite skill). - \"Continuous Assessment\" shall refer to the assessment of the student spread over the entire semester on the various constituent components of the prescribed course. - \"Semester\" shall refer to a period covering the two assessment periods viz Formative and Summative Assessment period. A semester would generally be spread over twenty weeks."
+ },
+ {
+  "id": "c010",
+  "page": 10,
+  "section": "General",
+  "text": "[General] - \"Course Drop\" shall refer to a student having to undertake a repeat of the Course(s) not being able to complete the Credit requirements of the Course(s), under the conditions stipulated in the regulation. - \"Supplementary Examinations\" shall refer to the examination(s) conducted to allow the student to appear in the un -cleared Semester - End summative assessment component. - \"Blank Semester\" shall refer to a Semester in which a student either does not register for any course at the beginning of the Semester OR chooses to DROP all courses OR is so compelled to DROP all the courses, as the case may be. - \"Semester Drop\" shall refer to availing a blank semester."
+ },
+ {
+  "id": "c011",
+  "page": 10,
+  "section": "General",
+  "text": "[General] However, if drop is availed to pursue a creative extension activity, then it is defined as semester sabbatical. - \"Spill Over Semester\" shall refer to the additional semester(s) beyond the completion of prescribed normal semesters. - \"AAA Section\" shall refer to the Academics, Assessment and Award Section of the Institute. - \"Attendance\" refers to the Physical personal presence in an academic activity session. - \"Summer Semester\" refers to a Semester that is scheduled to be held during the intervening period of Even and Odd Semester (i.e. Summer Vacation period)."
+ },
+ {
+  "id": "c012",
+  "page": 10,
+  "section": "General",
+  "text": "[General] - \"Themes\" refer to the courses offered in a particular stream other than offered by the regular departments, for example NCC, Entrepreneurship, Fitness and Living, etc. - \"School\" refers to a division of institute dealing with two or more specific areas of discipline / study comprising of the departments related with exclusive emphasis on trans-disciplinary research. - \"Department\" refers to a division of institute dealing with a specific area of discipline / study. - \"HoD\" refers to the Head of the respective Departmen t, where the student is enrolled for his / her Branch of Study."
+ },
+ {
+  "id": "c013",
+  "page": 10,
+  "section": "General",
+  "text": "[General] - \"Center\" refers to a structured unit within the school / department established with the purpose to carry out advanced research. - \"Grade Point\" refers to the quantification of the performance of a candidate in a particular course as defined herein. - \"SGPA\" refers to the Semester Grade Point Average and is calculated as detailed in the regulations subsequently. - \"CGPA\" refers to the Cumulative Grade Point Average and is calculated as detailed in the regulations subsequently. - \"Division\" refers to the Division awarded to the student as per the mechanism detailed in the regulations subsequently."
+ },
+ {
+  "id": "c014",
+  "page": 10,
+  "section": "General",
+  "text": "[General] - \"Internship\" refers to onsite Practical Training offered by reputed companies / Institutions, in India or abroad. To be undertaken with (or seeking) prior approval of the respective HoD. - \"Project\" refers to a course executed by a candidate on a specific research problem at VFSTR / any organization of repute. To be undertaken with (or seeking) prior approval of the respective HoD. - \"Credit equivalence and credit transfer committee\" refers to the committee designated to look into for credit equivalence and credit transfer. - \"Honorable Exit Option\" refers to the Exit Options available to students, when they are unable to complete the prescribed four -year B.Tech."
+ },
+ {
+  "id": "c015",
+  "page": 11,
+  "section": "General",
+  "text": "[General] 1.2 Academic Administration The academic programmes of VFSTR are governed by the rules and regulations approved by the Academic Council from time to time. The various academic activities are conducted following a fixed time schedule duly approved by the Academic Council in line with the AICTE / UGC regulations. The academic activities of VFSTR are followed meticulously as specified in the academic calendar as approved by the Academic Council. This academic calendar is shared with all the stake holders well before the beginning of the respective academic year."
+ },
+ {
+  "id": "c016",
+  "page": 11,
+  "section": "General",
+  "text": "[General] The curriculum and the course contents of all the programmes are discussed by the respective Bo ard of Studies (BoS), analyzed and recommended for implementation. The Academic Council, being the highest statutory body, chaired by the Vice-Chancellor, meets at least twice or thrice a year and discusses, suggests and approves all the important academic matters related to curriculum and course contents in particular including the recommendations of BoS. The intended revision in regulations (R22) was in principle accepted and recommended by the Academic Council in its 30th meeting on 07-05-2022."
+ },
+ {
+  "id": "c017",
+  "page": 11,
+  "section": "General",
+  "text": "[General] Subsequently respective Board of Studies brought necessary recommendations accordingly, which were duly placed before the Academic Council in its 31 st meeting on 30 -07-2022. Minor revisions made in the curricular and credit structure were approved by the A cademic Council in its 36th meeting on 24-04-2024."
+ },
+ {
+  "id": "c018",
+  "page": 12,
+  "section": "General",
+  "text": "[General] 1.3 Program Duration For the branch disciplines listed in section (1), the regular courses including theory and practical are offered over a period of four years in eight semesters. The normal duration to complete the B.Tech. program is four years. However, a student can avail the benefit of spill over period for 3 years, that is the maximum duration of seven years can be availed by a candidate to complete the B.Tech. programme in a slower pace if he / she desires. The candidate failing to complete the requirements will be considered for the honorable exit as applicable."
+ },
+ {
+  "id": "c019",
+  "page": 12,
+  "section": "General",
+  "text": "[General] 1.4 Courses and Credits The term course is used in a broader sense to refer to so called papers such as 'theory subject', 'laboratory', 'inter -departmental / field project', 'major -project' etc. A course can be of theoretical and/ or of practical nature, and certain number of credits are allotted to it depending on the number of hours of instruction per semester. For a course offered in a semester, one hour of lecture (L) instructions carried out in a week is considered equivalent to one credit, whereas two hours of practical (P) sessions done in a week are considered equivalent to one credit respectively."
+ },
+ {
+  "id": "c020",
+  "page": 12,
+  "section": "General",
+  "text": "[General] Depending on the course two hours of tutorial (T) sessions may be considered equivalent to one credit. A student earns these credits when he/she successfully completes the course. Add-on credits can also be obtained by successful completion of other recognized co - curricular and extra -curricular activities such as NCC, NSS, Yoga, Dance, Music, Painting, etc. The details of credits of such activities will be provided by the respective course coordinators and assessment of student performance in the activities will be carried out objectively by the constituted committees appointed by the Dean AAA."
+ },
+ {
+  "id": "c021",
+  "page": 12,
+  "section": "General",
+  "text": "[General] The criteria of a ssessment for these activities will include aspects like regular attendance in the programme and satisfactory completion of it through tests conducted at University level or by participation / performance at university level events, state level or national level participation etc. Add-on credits earned in a specified manner will lead to earning B.Tech., B.Tech. with Honours, B.Tech. with Research Honours, B.Tech. with Minor, B.Tech. with Add -on Diploma and B.Tech. with Add -on Certification. Provision is also created for a candidate to migrate from 4-years B.Tech. to 5 years of dual B.Tech. + M.Tech. / MBA degree"
+ },
+ {
+  "id": "c022",
+  "page": 13,
+  "section": "General",
+  "text": "[General] 1.4.1 Content Delivery of a Course Content delivery of a Course in the B.Tech. Degree Program shall be through, either or all, of the following Methods:"
+ },
+ {
+  "id": "c023",
+  "page": 13,
+  "section": "General",
+  "text": "[General] i. Lecture - refers to Lecture Session(s) through classroom contact session wherein students will learn by listening. Denoted by \"L\"."
+ },
+ {
+  "id": "c024",
+  "page": 13,
+  "section": "General",
+  "text": "[General] ii. Tutorial - refers to transaction(s) consisting of Participatory discussion / Self-study / Desk work / Brief presentations by students along with such other novel methods that enable a student to efficiently & effectively absorb and assimilate the contents delivered in the lecture sessions. Denoted by \"T\"."
+ },
+ {
+  "id": "c025",
+  "page": 13,
+  "section": "General",
+  "text": "[General] iii. Practice - refers to Practice / Practical sessions and it consists of Hands- on- Experience / Laboratory Experiments / Field projects / Case Studies / Minor / Major Project, that equip the students to acquire the much required skill component. Denoted by \"P\"."
+ },
+ {
+  "id": "c026",
+  "page": 13,
+  "section": "General",
+  "text": "[General] 1.5 B.Tech. Degree All students formally and conventionally enroll for B.Tech. degree programme. They have to earn 160 + 7 credits for the award of degree as specified in the Curriculum. Wherein 160 credits shall be referred as 'Graduating credits' and assigned towards courses such as Professional Core, Electives, Basic Engineering, Humanities and Management, Basic Sciences and Projects. Additional 7 credits are referred as 'Compulsory Binary Grade Credits' and shall be awarded for various binary grade courses specified in the curriculum. However, additionally he/she can opt to earn up to 20 more credits as Add-on credits, to earn the academic benefits as specified below."
+ },
+ {
+  "id": "c027",
+  "page": 13,
+  "section": "General",
+  "text": "[General] 1.5.1 B.Tech. with Honours Specialization: XX A candidate may earn additional 20 credits, cumulatively totalling to 180+7 credits in the respective discipline spread over fourth to eight semesters to become eligible for the award of B.Tech. with Honours in YY Engineering (Specialization: XX) If the a dd-on credits are designed to take -up a research activity and to complete a research thesis under the scope of 180+7 credits, then he/she become eligible to receive the award of B.Tech. with Research Honours in YY Engineering (Specialization: XX). However, admission stipulations are applicable for a candidate to pursue B.Tech. with Research Honours. Annexure -1 provides the supplement regulations for the award of B.Tech. with Research Honours."
+ },
+ {
+  "id": "c028",
+  "page": 14,
+  "section": "General",
+  "text": "[General] 1.5.2 B.Tech. with Minor Specialization in XX A candidate may earn additional 20 credits, cumulatively totalling to 180+7 credits in anyone of the other disciplines spread over fourth to eight semesters to become eligible for the award of B.Tech. in YY Engineering with Minor Specialization in XX."
+ },
+ {
+  "id": "c029",
+  "page": 14,
+  "section": "General",
+  "text": "[General] 1.5.3 B.Tech. with Add-on Diploma If a candidate earns add-on 20 credits from assorted disciplines/ themes/ centers, then he/ she will be eligible for the award of B.Tech. with Add-on Diploma."
+ },
+ {
+  "id": "c030",
+  "page": 14,
+  "section": "General",
+  "text": "[General] 1.5.4 B.Tech. with Add-on Certification If a candidate in accordance with the sections of 1.5.1, 1.5.2, and 1.5.3 earn additional credits, but will not satisfy the completion of 20 credits, then he / she will be eligible to receive B.Tech. with Add-on Certification. However, such a candidate may also avail a spill over semester to complete 20 credits."
+ },
+ {
+  "id": "c031",
+  "page": 14,
+  "section": "General",
+  "text": "[General] 1.5.5 Dual (B.Tech. + M.Tech. / MBA) degree programme of 5-years* A provision is also created for a candidate who is enrolled for B.Tech. degree to switch over to Dual (B.Tech. + M.Tech. / MBA) degree. Annexure -2a & 2b provides the supplement regulations for Dual degree programme. *Programme will be offered based on sat isfactory strength of students willing to register, after receiving the formal AICTE approval. Note: The consolidated transcript will contain the credits and grade details of all courses amounting to 160+7 + up to 20 credits. Every candidate should expres s his/ her provisional intent at the time of B.Tech. admission for pursuing B.Tech. with Honours/ B.Tech. with Minor/ Dual (B.Tech. + M.Tech. / MBA) degree. However, he / she can exercise his option to change his intent and final confirmation should be submitted at 5th sem. for Research Honours and at 6th sem. for Dual degree. YY refers to name of the Branch discipline ( E.g. CSE / ECE / BT); XX refers to a particular specialization within a Branch discipline."
+ },
+ {
+  "id": "c032",
+  "page": 14,
+  "section": "General",
+  "text": "[General] 1.6 Composition of an Academic year An academic year is composed of an Odd semester (20 – 22 weeks), an Even semester (20 – 22 weeks) and a Summer semester (6 – 8 weeks). The regular semester that begins in July / August is known as odd / first semester and the one that begins in December / January is known as even / second semester (Figure 1). The instructional days for a regular semester shall be a minimum of 90 working days exclusive of days earmarked for summative assessment YEAR OF 12 MONTHS 1 2 3 4 5 6 7 8 9 10 11 12 July/ Aug. Aug./ Sept. Sept./ Oct. Oct./ Nov. Nov./ Dec. Dec./ Jan. Jan./ Feb. Feb./ Mar. Mar./ Apr. Apr./ May May/ June June/ July ODD SEM/ FIRST SEM EVEN SEM/ SECOND SEM SUMMER SEM Figure 1: Distribution of semesters during an Academic Year."
+ },
+ {
+  "id": "c033",
+  "page": 15,
+  "section": "General",
+  "text": "[General] 1.6.1 Before the commencement of the semester, a candidate has to pay the stipulated tuition fee and submit an application detailing the courses he / she intended to register, valid for that respective Odd / Even semester. The maximum number of credits per semester will be 25 credits inclusive add -on credits. The intended semester wise coverage will be as presented in the curriculum."
+ },
+ {
+  "id": "c034",
+  "page": 15,
+  "section": "General",
+  "text": "[General] 1.6.2 Summer semester is a short duration semester program that will be generally conducted during the semester break between even semester and odd semester. The students having 'R' (Repeat grade) courses may register for the course work during this semester to get a chance for successfully completing the 'R' courses. In general, supplementary assessments are conducted in the later p art of the summer semester. However, the courses offered in summer semester and the number of courses a student can register are subjected to academic and administrative convenience. A student may register up to a max. of 16 credits in a summer semester."
+ },
+ {
+  "id": "c035",
+  "page": 15,
+  "section": "General",
+  "text": "[General] 1.6.3 Exception to the routine practice of registering for 'R' courses in summer semester, a student can register in a course offered by a visiting expert during the summer vacation which may be equivalent to an open elective or a department elective or an Add-on- course. The candidates can register for such courses within the scope of 16 credits. Candidate may also avail summer semester for summer internship opportunities, which may be considered as Add-on credits."
+ },
+ {
+  "id": "c036",
+  "page": 15,
+  "section": "General",
+  "text": "[General] 1.6.4 Summer internship credits will also be appended to the credits of Honours / Minor / Add-on certification provided the theme of internship is in accordance with the specialization of Honours/ Minor."
+ },
+ {
+  "id": "c037",
+  "page": 16,
+  "section": "General",
+  "text": "[General] 1.7 Semester wise provisions A student may register for a max of 25 credits per semester as prescribed or otherwise he/ she may include the Repeat courses in the event of having not successfully completed a course or courses in the earlier semester. However, a student may also opt to go in a slower pace to earn the credits less than the prescr ibed max of 25, including even 'Dropping' a semester for special reasons. It should be clearly underscored that a candidate should on priority register for Repeat (R) credits if any, during a regular semester, within the said scope of 25 credits; in case he / she cannot be sure of completing the 'R' credits in Summer semester."
+ },
+ {
+  "id": "c038",
+  "page": 16,
+  "section": "General",
+  "text": "[General] 1.7.1 During the first four years from the date of admission to B.Tech., a candidate has to pay the semester / annual fees as prescribed irrespective of the less number of credits that he / she would register or even opt to Drop a semester."
+ },
+ {
+  "id": "c039",
+  "page": 16,
+  "section": "General",
+  "text": "[General] 1.7.2 If a can didate gets into spill over semester beyond four years up to a maximum of seven years he / she has to pay semester fee proportional to the credits that he/ she registered in that spill over semester as prescribed from time to time."
+ },
+ {
+  "id": "c040",
+  "page": 16,
+  "section": "General",
+  "text": "[General] 1.7.3 A candidate has t o pay additional fee proportional to the number of credits for registering in a summer semester as prescribed from time to time."
+ },
+ {
+  "id": "c041",
+  "page": 16,
+  "section": "Curriculum",
+  "text": "[Curriculum] 2. CURRICULUM Each School offers different B.Tech. degree programmes and the departments concerned prescribes semester-wise curriculum encompassing different courses. Every course offered will be designated in a L-T-P structure. The theory courses comprise of L (and / or T & P hours) whereas the practical courses include instructions (T) and practical sessions (P). Amalgamation of theory courses with practical sessions is predominantly seen in this curriculum. Specifically, during the first year, some of the courses may be offered in a swap mode, that is the same course is offered in both the semesters of I-year to accommodate the student strength and for operational convenience."
+ },
+ {
+  "id": "c042",
+  "page": 17,
+  "section": "Curriculum",
+  "text": "[Curriculum] 2.2 Organization of course contents Courses offered in the program is composed of two modules covering all the course contents required for a candidate to obtain knowledge and skill. Content in each module is further distributed among two units; wherein Unit -1 contains 'Fundamentals and Broad perceptive' of the module. Unit -2 comprises of the extension / advanced topics of Unit -1 as well as necessary practice models for validation / applying the knowledge gained during L/T sessions. The modular period is about 8 weeks. The first unit in a module may be covered in 2 to 3 weeks and the second unit of the module maybe of 5 to 6 weeks (Figure 2)."
+ },
+ {
+  "id": "c043",
+  "page": 17,
+  "section": "Curriculum",
+  "text": "[Curriculum] By the end of each module a candidate must be in a position to translate his/ her L -based knowledge into P-based skill as prescribed in the curriculum. Individual formative assessment shall be in place for each module and a single semester-end summative assessment for the course composed of both the modules. YEAR OF 12 MONTHS 1 2 3 4 5 6 7 8 9 10 11 12 July/ Aug. Aug./ Sept. Sept./ Oct. Oct./ Nov. Nov./ Dec. Dec./ Jan. Jan./ Feb. Feb./ Mar. Mar./ Apr."
+ },
+ {
+  "id": "c044",
+  "page": 17,
+  "section": "Curriculum",
+  "text": "[Curriculum] Apr./ May May/ June June/ July ODD SEM/ FIRST SEM EVEN SEM/ SECOND SEM SUMMER SEM Module- I Module- II Module- I Module- II U1 U2 U1 U2 U1 U2 U1 U2 Figure 2: Unit-wise distribution of course contents in a module and their mapping with Academic Calendar; U= Unit."
+ },
+ {
+  "id": "c045",
+  "page": 18,
+  "section": "Curriculum",
+  "text": "[Curriculum] 2.3 Prerequisite Knowledge Wherever prerequisite knowledge was mentioned it should be treated as registering for the courses covering the con tent mentioned in prerequisite knowledge is mandatory for the student before he / she register in a higher level course."
+ },
+ {
+  "id": "c046",
+  "page": 18,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3. NATIONAL CREDIT FRAMEWORK / CHOICE BASED CREDIT SYSTEM Each branch discipline of the B.Tech. programme comprises of a set of courses - basic sciences, humanities and management, basic engineering, professional core, electives, employability & life skill courses. VFSTR offers flexibility for students to choose courses of their choice and obtain the credits satisfying the minimum credits criterion in each category as given in Table (1)."
+ },
+ {
+  "id": "c047",
+  "page": 18,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.1 Common (Core) Courses for all branch disciplines First year curriculum is intended to provide foundational understanding of basic concepts across various engineering disciplines. It covers fundamental subjects like basic sciences, basic engineering, humanities and management. Curriculum (C24) have common first-year course structure (two streams – M.P.C & Bi.P.C background) to ensures that all students regardless of their prior education should have similar level of knowledge and skills before they start their specialized courses in the second year. In some cases, students might want to change their specialization after the first year. A common first -year structure makes it easier for them to switch between different engineering disciplines without having to repeat a significant portion of their coursework."
+ },
+ {
+  "id": "c048",
+  "page": 18,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.1.1 Basic Sciences and Humanities Basic science courses are included to offer the knowledge of scientific theories that form the foundation for all the engineering solutions. Courses of Management and Humanities are also offered. The main purpose of offering Management courses is to impart Management skills to students so that they would pursue allied career opportunities. 'Humanities' courses are meant for gaining managerial and organisational skills. In this some aspects of civil services are also cov ered for the benefit of those interested students."
+ },
+ {
+  "id": "c049",
+  "page": 18,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.1.2 Basic Engineering Basic engineering courses are those that every engineer, irrespective of his discipline, ought to understand to perform well in his/her discipline. Engineering drawing, IT Tools & Cyber security, computer programming are some of the courses that fall in this category."
+ },
+ {
+  "id": "c050",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.2 Professional Core Professional Core courses are individualized for each programme and they are mandatory for every student opting for that branch discipl ine. These are designed to offer the essential fundamental knowledge and skills required for that specific programme."
+ },
+ {
+  "id": "c051",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.3 Electives A candidate has a choice to choose the elective courses. A list of elective courses is pooled together, enabling a candidate to choose the electives from a pool so that he/she can focus to a specific theme. Otherwise also he/ she can exercise the choice to choose electives from across the pools. There may be courses which may not be listed under any pool, which are called 'Free elective courses'. Elective courses offered for each programme are categorized as 'department electives' and 'open electives'. Some electives may have pre -requisites i.e., successful completion of a course / knowledge of a course / the department's consent."
+ },
+ {
+  "id": "c052",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.3.1 Department Electives 'Department electives' are those courses that are aimed at offering the advanced/ additional knowledge in the chosen branch discipline. Care should be exercised while opting for departmental elective courses and specialization courses that is a course opted as departmental elective should not be registered as a course under Specialization and vice versa."
+ },
+ {
+  "id": "c053",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.3.2 Industry – Interface (I2) courses I2 courses are offered with the support of industry personnel and are also included in department elective category. These courses are of one credit, and are offered by experts from industry / academia. The I2 course is offered to 3rd year B.Tech. students with 15 hours' duration as Binary graded course. The duration of 15 hours can be spread across 3 days continuously or 3 different slots of 5 hours each on consecutive weeks. Students who successfully complete the course will be awarded one credit."
+ },
+ {
+  "id": "c054",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.3.3 Open Electives The elective courses offered by the departments/ centers/ themes for other department students are called as open electives. These electives are offered to enable students understand interdisciplinary nature of courses. A student's enrollment for pursuing an open elective course(s) is based on his/her choice and order of merit and subject to availability of seats. Elective courses are spread over four semesters from fourth to seventh semester, to enable students earn credits from a chosen pool or otherwise."
+ },
+ {
+  "id": "c055",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] Care should be exercised by the candidate while opting for Open electives and minor courses, that is a course opted as Open elective should not be registered as a course under Minor and vice versa. In 'electives' category, a student is required to secure a minimum of 33 credits. These credits can be obtained through a combination of courses from his / her own department and other departments. Of these 6 credits have to be earned through MOOCs offered via Swayam platform. A student may also be permitted to earn more elective credits through MOOCS. This will promote self -learning and drive students towards innovative learning approaches."
+ },
+ {
+  "id": "c056",
+  "page": 19,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] To facilitate the process of acquiring the elective credits through MOOCS, VFSTR has constituted \"Online course committee\" at Central level with 1-2 members represented from each of the department to guide students in selection of courses and to assist them with further steps if required until completion of the courses."
+ },
+ {
+  "id": "c057",
+  "page": 20,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.4 Inter-departmental Project These projects are designed and executed by students during the even semester of second and third year of their program in lieu of Field projects. By doing t hese projects, students will get an idea of how technologies or processes, prototype or working model can be developed by culmination of technologies from courses of different programs / departments. One of objectives identified for successful execution of the project should be of other departmental nature which may influence either process adopted or product developed. The minimum duration of inter -departmental project during the semester is 90 hours including writing of project report and submission for assessment. A batch of 4 students from across or within the departments can take part in the inter -departmental projects. Performance will also be assessed in the modular framework for formative and semester -end summative with a weightage of 1 credit per project."
+ },
+ {
+  "id": "c058",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.5 Field projects In lieu of Inter -departmental project, students can enrol for field projects during the even semester of second and third year of their program. These projects are intended to emphasize learning through direct experience, allowing students to apply theoretical knowledge in real -world contexts. This hands -on approach provides students with meaningful learning experiences that not only deepen their understanding of academic concepts but also cultivate essential skills and attitudes needed for success in their future careers and as responsible members of society."
+ },
+ {
+  "id": "c059",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] The minimum duration of field project during the semester is 90 hours including writing of project report and submission for assessment. A batch of 4 students can take part in each project. Performance will also be assessed in the modular framework for formative and semester-end summative with a weightage of 1 credit per project. Students are recommended to select ' Societal-centric projects ' during choosing a problem statement after enrolling either for field project or Inter-departmental project. Research on such problems offers students' a platform to make meaningful contributions to their co mmunities while developing essential skills and ethical awareness."
+ },
+ {
+  "id": "c060",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] Engaging in these projects help students to become more well -rounded, socially conscious, and professionally prepared engineers."
+ },
+ {
+  "id": "c061",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.6 Project Students may opt for Project work in lieu of internship. Such students may avail research -internship support from any institution well known for research and development (R&D). They may also take up project work in VFSTR itself. Each candidate has to subm it interim reports and a final report which are mandatory requirements towards the partial fulfillment of project credits requirements. It bears a weightage of 12 credits with a duration of 90 working days. During the semester the student under the guidance of a faculty member(s) will involve in an innovative design / research through the application of his / her knowledge gained in various courses studied."
+ },
+ {
+  "id": "c062",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] He / she is therefore expected to present a survey of literature on the topic, work out a project pla n and carry it out through experimentation / modelling / simulation / computation. Through such a project work, the student is expected to demonstrate system analysis, design, presentation and execution skills. Through such a project work, the student is e xpected to demonstrate system analysis, design, presentation and execution skills."
+ },
+ {
+  "id": "c063",
+  "page": 21,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] Students are expected to integrate design component into their project to realize various aspects such as User -Centric Focus, Consistency and Branding, Efficiency and Scalability, Improved Communication, Adaptability and Innovation, Faster Development Cycles, Enhanced User Engagement and Satisfaction etc. Comprehending design component should be documented in the project report by incorporating 'Major Design Experience Inform ation Sheet'. Performance in the project will also be assessed in the modular framework for formative and semester - end summative."
+ },
+ {
+  "id": "c064",
+  "page": 22,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.7 Internship A student can undertake internship in lieu of project work in industry for one complete semester during seven th/ eighth semester in lieu of major project work. If the Internship is under taken during 7 th semester, then the regular course work of 7 th semester should be taken up during the 8th semester (7th and 8th semester happen in a swapped mode). It bears a weightage of 12 credits. This is aimed at training students in solving / understanding real -life problems through application of engineering analysis, design, evaluation and creation, particularly in association with practitioners and experts in the industry."
+ },
+ {
+  "id": "c065",
+  "page": 22,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] The procedures for obtaining the internship placements and allocation of the same to the students are as per University defined norms outlined in the 'internship programme operational guidelines' manual. Even during internship, a student is preferably expected to carry out a focused study on one topic/ problem in consultation with the interning institute. Internship progress report should be submitted periodically and finally a detailed internship report should be submitted duly certified by a mentor from the internship institute. Performance in the internship will also be assessed in the modular framework for formative and semester -end summative."
+ },
+ {
+  "id": "c066",
+  "page": 22,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8 Binary Graded courses Apart from I 2 courses, following courses shall also be offered as 'Compulsory Binary Grade Courses' with a weightage of 1-credit per course. Courses like Orientation session (Induction program); Constitution of India; Self -empowerment & Gender Sensitization; Physical fitness, Sports & Games; Life skills; Universal Human Values; and Indian Knowledge Systems will be offered to students during the first three semesters of the programme."
+ },
+ {
+  "id": "c067",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.1 Orientation session (Induction program) Orientation session is an induction program floated to set a positive tone for the rest of the B.Tech program by helping students feel welcomed, informed, and prepared. This course is intended to play a crucial role in ensuring that students start their engineering education on the right foot, with a clear understanding by organizing activities related to Campus Tour, Orientation to the Institution, Academic Preparedness, Social Integration, lectures by eminent personalities, Team-Building Activities, Introduction to Student Clubs, Cultural Programs and Recreational Activities."
+ },
+ {
+  "id": "c068",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.2 Physical Fitness As physical fitness contributes to physical, mental and social development, it is offered to students. Students are imparted training through physical exercises."
+ },
+ {
+  "id": "c069",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.3 Life Skills Realizing the VFSTR's Vision of preparing multifaceted personalities, VFSTR floats various credit based life skill activities for students such as yoga, dance, music etc."
+ },
+ {
+  "id": "c070",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.4 Constitution of India With an intention to transform students into responsible citizens and professionals, a course on the Constitution of India is offered for B.Tech students to provide a foundational understanding of India's legal framework, governance structure, and fundamental rights and duties."
+ },
+ {
+  "id": "c071",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.5 Self-empowerment & Gender Sensitization This course aims to foster personal growth, promote gender equality, and create a more inclusive and respectful campus environment. It is designed to equip students with the skills and awareness necessary to navigate and challenge societal norms related to gender, and to empower themselves and their peers."
+ },
+ {
+  "id": "c072",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.6 Universal Human Values Integrating Universal Human Values course into the B.Tech. curriculum aims to instill a deep understanding of ethical, moral, and human values, fostering holistic development. This course emphasizes the importance of values in personal and professional life, encouraging students to lead a life of integrity, empathy, and respect."
+ },
+ {
+  "id": "c073",
+  "page": 23,
+  "section": "National Credit Framework / Choice Based Credit System",
+  "text": "[National Credit Framework / Choice Based Credit System] 3.8.7 Indian Knowledge Systems A course on Indian Knowledge Systems (IKS) is designed to provide insights into the rich and diverse heritage of traditional Indian knowledge, encompassing various domains such as science, technology, philosophy, arts, and culture. This course aims to create an appreciation for the indigenous knowledge systems and their relevance in contemporary times In case the candidate does not successfully complete the binary graded courses, they will be placed under 'R' category. However, such R should be completed in regular Odd / Even semester whenever these courses are offered. In special cases provision of summer semester may be provided."
+ },
+ {
+  "id": "c074",
+  "page": 24,
+  "section": "Attendance",
+  "text": "[Attendance] 4. ATTENDANCE It is mandatory for the student to attend the course work in each semester as per the academic schedule of that semester. VFSTR expects 100% attendance. However, the attendance in each course shall not be less than 75 % of the aggregate of all L, T, P sessions conducted in that course."
+ },
+ {
+  "id": "c075",
+  "page": 24,
+  "section": "Attendance",
+  "text": "[Attendance] a) The attendance calculations will be periodically reviewed at the end of every 4 weeks. The details of attendance status will be shared with the parents / guardian. The final status of attendance will be reported at end of 15 th week granting the advantage of the attendance for the 16th week for the purpose of attendance shortage calculations."
+ },
+ {
+  "id": "c076",
+  "page": 24,
+  "section": "Attendance",
+  "text": "[Attendance] b) The shortage of attendance may be condoned up to 10% on the ground of ill-health, social obligations, participating / representing in sports/cultural events, placement activities etc."
+ },
+ {
+  "id": "c077",
+  "page": 24,
+  "section": "Attendance",
+  "text": "[Attendance] c) Documentary evidence like medical reports and certific ates issued by concerned bodies is to be produced on time as support for the attendance shortage due to ill - health. These cases are subjected to the scrutiny of a committee constituted for this purpose by the Vice-Chancellor. The decision of the committee shall be final."
+ },
+ {
+  "id": "c078",
+  "page": 24,
+  "section": "Attendance",
+  "text": "[Attendance] e) The courses where the student shortage of attendance was not condoned shall be considered as 'Repeat' category courses and will be under 'R' grade in the student's semester transcript. Student should re-register for these courses during the summer semester or whenever the course is offered next time during regular semesters. These re-registrations are subjected to the regulations at the time of re-registration. In case of core courses, the same core has got to be re-registered. However, in case of an elective a candidate may exercise a choice of choosing different elective in place of 'R' graded elective. The students who are put into 'R' grade will not be allowed to take up the summative assessment in that semester. In case due to lack and/or delay in information, if he/she appears for the summative assessment in that course, office of AAA is empowered to cancel the attended exams. The scores obtained either in formative or summative assessment will not be considered for grading."
+ },
+ {
+  "id": "c079",
+  "page": 25,
+  "section": "Assessment",
+  "text": "[Assessment] 5. ASSESSMENT Teaching-Learning and Assessment should go hand in hand and complement each other. Continuous assessment plays a vital role to enable the student to get synchronized with the teaching-learning process. Assessment mechanism adopted in the institute is aimed at testing the learning outcomes in tune with the outcome based model of education. The focus, is thus on assessing whether the outcomes are realized by the end of the course. The performance of a student in each course is assessed on a continuous basis during the semester through various in -semester and end -semester assessment models. The marks awarded through continuous assessment are referred to as Formative assessment marks. The marks awarded through end -semester tests are referred to as Summative ass essment marks (Figure 3). Both the formative and summative assessment marks are considered for awarding the final marks and the grade point in a particular course. Figure 3: Categories of assessments in place for R22."
+ },
+ {
+  "id": "c080",
+  "page": 25,
+  "section": "Assessment",
+  "text": "[Assessment] 5.1 Marks distribution For each course, the maximum sum of formative and summative assessment marks put together is 100, in the ratio of 60:40, respectively."
+ },
+ {
+  "id": "c081",
+  "page": 25,
+  "section": "Assessment",
+  "text": "[Assessment] 5.2 Qualifying criteria To be declared successful in a course, a student must secure at least a grade 4.0 in a scale of 10 based on the total maximum marks which is inclusive of formative and summative assessment. The students should also get 35% from the maximum marks allotted for formative and summative assessments individually. The hierarchy of qualifying criteria is as follows:"
+ },
+ {
+  "id": "c082",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] i. Attendance compliance should be 75% or within condonable range; else the candidate is put into 'R' grade."
+ },
+ {
+  "id": "c083",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] ii. In formative assessment, a candidate should secure a minimum of 35% i.e. 21 marks out of 60; else the candidate is put into 'R' grade."
+ },
+ {
+  "id": "c084",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] iii. In summative assessment, a candidate should secure a minimum of 35% i.e. 14 marks out of 40; else the candidate is put into 'I' (Incomplete) grade."
+ },
+ {
+  "id": "c085",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] iv. Collectively the candidate should secure a min. grade of 4.0 in a scale of 10 after relative grading (section 7); else the candidate has to choose either 'R' or 'I' grade duly being counselled."
+ },
+ {
+  "id": "c086",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] v. A candidate who has secured grade <5 in a course may be permitted (optional) to volunteer to improve his / her grade by opting suitably 'R' or 'I' grade in that course. The candidates with 'R' grade should re-register for 'R' courses either in Summer semester or in a regular semester as and when the courses are offered. The candidates in 'I' grade are allowed to appear for supplementary summative assessment whenever the semester-end assessments are conducted."
+ },
+ {
+  "id": "c087",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] To assess Binary graded courses / special projects / courses, not fitting into the categories described here, a suitable assessment procedure will be evolved in consultation with experts of that area and adjudicated by the committee constituted for that purpose. The decision given by the committee will be final. The appended assessment scheme shall be announced by the course coordinator during the commencement of course. YEAR OF 12 MONTHS 1 2 3 4 5 6 7 8 9 10 11 12 July/ Aug. Aug./ Sept. Sept./ Oct. Oct./ Nov. Nov./ Dec. Dec./ Jan. Jan./ Feb. Feb./ Mar. Mar./ Apr."
+ },
+ {
+  "id": "c088",
+  "page": 26,
+  "section": "Assessment",
+  "text": "[Assessment] Apr./ May May/ June June/ July ODD SEM/ FIRST SEM EVEN SEM/ SECOND SEM SUMMER S Module- I Module- II Module- I Module- II U1 U2 U1 U2 U1 U2 U1 U2 Formative Assessment SA Formative Assessment SA Figure 4: Schedules of formative and summative assessments in line with Academic calendar. SA = Summative assessment."
+ },
+ {
+  "id": "c089",
+  "page": 27,
+  "section": "Assessment",
+  "text": "[Assessment] 5.3.1 Formative Assessment The scheme of formative assessment is designed to promote the continuous learning. Scheme consists of assessments planned at institute level and assessment that may be scheduled by the course instructor (Figure 4). Institute level assessments shall be scheduled by the office of AAA. Respective Faculty Member(s) shall declare the schedule of Continuous Laboratory Assessments (CLA), Quiz, Tutorials, Assignments, Seminars, Discussions, etc. Some of the components may also however take place in an unscheduled manner like Surprise Tests."
+ },
+ {
+  "id": "c090",
+  "page": 27,
+  "section": "Assessment",
+  "text": "[Assessment] However, students shall be made aware of the assessment modalities that are going to be followed in a course by the faculty, under information to the HoD. To monitor the progress of students, continuous assessment comprising of five targets (T1, T2, T3, T4 and T5) is advocated in each module for a maximum of 60 marks. For a class (or section) of 60 to 70 students, formative assessment commences by the announcement of module bank containing 10 problems for each module in a course . Nature of problems in the module bank shall be at the level of creative / exploratory / design / thought provoking covering the complete syllabus of a module at somewhat advanced / challenging level."
+ },
+ {
+  "id": "c091",
+  "page": 27,
+  "section": "Assessment",
+  "text": "[Assessment] The purpose of creating module bank of 10 problems is to assign one problem each to 2 batches of 3 - 4 members. The batches are composed of randomly picked up candidates. These batches remain same for all courses and also for the P -sessions in the courses in that semester and are created in the beginning of that semester. The purpose of assigning one problem to two batches is to create a healthy competitive spirit between the two batches. The modality of evaluation of five targets is listed here under:"
+ },
+ {
+  "id": "c092",
+  "page": 27,
+  "section": "Assessment",
+  "text": "[Assessment] a) Pre-T1 shall be conducted twice / thrice by course instructor as classroom test / assignments during the first 4-weeks of each module. Assignments can be conducted on pre -announced modular problems or broad concepts covered during the L-sessions with a weightage of 10 marks. Structure of the assignment shall be under four sub -heading: Objective envisaged, expected theoretical background, Suggestive proposal and Anticipated outcomes. Consolidated pre-T1 scores shall be manually mapped down by course instructor to a max. of 10 marks and entered into portal along with T1 scores."
+ },
+ {
+  "id": "c093",
+  "page": 28,
+  "section": "Assessment",
+  "text": "[Assessment] b) T1: During 5th or 6th week of each module a classroom test shall be conducted. T1 consists of two parts: A and B. Part A consists of one random problem from the module bank and vary from batch to batch. All the questions in the module bank shall be distributed among students and students shall know the question to be answered only on the day of test in the examination hall. Part B consists of one common problem at fairly application/ advanced level ( not at all prior notified) from outside the module bank for all the students. T1 shall be paper based and proctored test for a period of 60 min (maximum) which shall be assessed for 20 marks. 30 marks obtained from T1 and Pre-T1 will be downscaled to 10 marks. For the students who for justifiable reasons could not attend the classroom test on the scheduled day, a re-test maybe conducted. However, Part-B will contain a new question and Part-B will have higher weightage than part-A or full weightage could even be allotted for Part-B in such an event."
+ },
+ {
+  "id": "c094",
+  "page": 28,
+  "section": "Assessment",
+  "text": "[Assessment] c) T2: Immediately follows T1. Students in a specified batch who now have received the same question during T1 will work further on that problem for T2. T2 is primarily an extension of problem received in T1 for carrying out validation study: Case studies / Simulations / Experimentation. Each batch shall interact with the course instructor to finalize the nature of validation and expected to complete the exercise within 10 to 15 days after T1. Course instructor should ensure assigning a different case study / a different scope for validation study for each batch in case the same problem is assigned to two batches. Course instructor shall assess every student in a batch for a max. of 10 marks based on his observation, interaction and/or reviewing (based on at least two reviews)."
+ },
+ {
+  "id": "c095",
+  "page": 28,
+  "section": "Assessment",
+  "text": "[Assessment] d) T3: T3 shall be conducted during the last week of each module. Student batches are expected to submit a report, clearly documenting the work executed during T2. The report should be in IEEE / APA format and additionally a voice in-built PPT should be prepared and submitted. The report and presentation shall be assessed by the course instructor for 10 marks for every student. In certain cases, a course instructor can call for a physical presentation also by a batch."
+ },
+ {
+  "id": "c096",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] e) T4: T4 is a comprehensive module test, conducted for 30 min. comprising of 20 multiple choice questions (MCQs) covering the holistic content of module. T4 shall be evaluated for a max. of 10 marks @ ½ mark for each question. T4 will be conducted in ON-LINE mode. There shall be two tests in each course in a day and the best performance of the tests shall be considered for awarding the marks. Two sets of question papers each containing 20 questions should be set. The theme of the questions could be similar across the sets. When the test is administered online, every student receives the questions in shuffled sequence and also the choices in shuffled sequence. Therefore, the choice like both 'a' & 'b' above. Neither 'a' nor 'b', all the three a, b, c will not be set."
+ },
+ {
+  "id": "c097",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] f) T5: T5 assessment is based on Practice or Tutorial assignments. Implementation, Report presentation and Discussion shall happen in a continuous mode throughout the module period. At least 4 such continuous lab practice assessments (CLPA) / assignments per module shall be conducted by course instructor. The marks will be @ 5 marks per assignment totalling up to 20 per module."
+ },
+ {
+  "id": "c098",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] g) The scores of the targets are to be normally announced within three working days on completion of the assessment and the performance is to be discussed in the class."
+ },
+ {
+  "id": "c099",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] h) The total marks per module is 60 - T1 (out of 10), T2 (out of 10), T3 (out of 10), T4 (out of 10) and T5 (out of 20)."
+ },
+ {
+  "id": "c100",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] i) Total marks for both the modules from formative assessment will be added up to 120, which will be suitably mapped down to a max. of 60 marks. The mapping policy should be decided by the lead instructor / instructors in consultation with the HoD. The mapping policy should be shared with Dean AAA for the purpose of documentation."
+ },
+ {
+  "id": "c101",
+  "page": 29,
+  "section": "Assessment",
+  "text": "[Assessment] j) The marks scored in Module -1 for a max. of 6 0 should be entered / submitted latest by 9th week and of Module-2 latest by 17th week of the semester. Consolidated score of for a max. of 120 suitably mapped down to a max. of 60 marks should be submitted latest by 18th week of semester enabling the decl aration of 'R' - grade before the commencement of summative assessment."
+ },
+ {
+  "id": "c102",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] 5.3.2 Summative Assessment Summative assessment activities including timetables, question paper model, duration of the examinations will be informed to the students well before the commencement of the examinations in the form of circulars from Dean-AAA office. Unless specified otherwise the following scheme of assessment shall be followed."
+ },
+ {
+  "id": "c103",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] a) An instructor may choose one of the two formats for conducting summative assessment for L-based courses integrated with T/P."
+ },
+ {
+  "id": "c104",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] i) 15 + 25 marks format or 20 + 20 marks format (following b, c, d below). ii) 40 marks format (following c, d below)."
+ },
+ {
+  "id": "c105",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] i) Part-I will be the assessment of capstone project which is pre-assigned during the module-2 period or will be the exploratory review assessment of all lab practice assignments. ii) Part-II will be based on a written examination for a max. marks of 60, as in c & d below, which is scaled down to 25 or 20 based on the selected pattern of format. iii) A candidate should attend both the parts of summative assessments; else he will be put into I grade."
+ },
+ {
+  "id": "c106",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] c) For each L -based course integrated with T/P, the summative assessment shall be conducted by the Institute for a duration of 120 min. and for a maximum of 60 marks. Contents for summative assessment shall cover the breadth and depth of the complete syllabus that is mentioned in the two modules of a course."
+ },
+ {
+  "id": "c107",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] d) The question paper for end-semester theory examination consists of two parts as given in Table (2). Table 2: L-based Summative Assessment Question Paper Pattern. Part No. No. of Questions Marks for each Question Marks Choice A 4 8 32 No B 2 14 28 No Total Marks 60"
+ },
+ {
+  "id": "c108",
+  "page": 30,
+  "section": "Assessment",
+  "text": "[Assessment] e) The questions will be comprehensive covering the entire course syllabus and any single question should not necessarily be limited to any particular unit / module."
+ },
+ {
+  "id": "c109",
+  "page": 31,
+  "section": "Assessment",
+  "text": "[Assessment] g) Total marks of summative assessment will be for a max. of 40 irrespective of format of evaluation."
+ },
+ {
+  "id": "c110",
+  "page": 31,
+  "section": "Assessment",
+  "text": "[Assessment] h) The award of 'I' grade is solely based on marks scored in summative assessment out of 40, if he/she does not score a min. 14 out of 40 (35%)."
+ },
+ {
+  "id": "c111",
+  "page": 31,
+  "section": "Assessment",
+  "text": "[Assessment] 5.4 P-based Courses The detailed information consisting of experiments, batch formations, experiment schedules, etc., will be displayed / informed to the student in the first week of the semester so that the student comes prepared for the lab sessions. Copies of the lab manual will be made available to the students along with the schedule. The lab manual will consist of the list of equipment's, detailed procedure to conduct the experiment, format for record writing, outcomes for each experiment and possible set of short questions to help students gain critical understanding . The courses like IT Tools & Cyber security, Engineering Graphics , Design Thinking & Engineering will also be treated as P-based courses."
+ },
+ {
+  "id": "c112",
+  "page": 31,
+  "section": "Assessment",
+  "text": "[Assessment] 5.4.1 Formative Assessment During laboratory sessions, a brief viva -voce is conducted for each student on the experiment he/she is carrying out on that day. Some of the parameters that could be included in the Continuous Lab Practice Assessment (CLPA) are given in Table (3). The set of parameters may slightly differ from one laboratory to the other, and will be announced before the commencement of the lab session. These parameters are assessed for each laboratory session. Table 3: Suggested parameters for Lab Practice Assessment (CLPA) S. No Component Marks 1 Report of about 1 page on proposed experimental layout and background theory before the start of lab session 4 2 Viva and interaction to evaluate understanding of concepts 4 3 Experimentation and data collection 4 4 Analysis of experimental data and interpretation 4 5 Finalized report submitted in the next week 4 Total 20 This assessment is carried out for each practical session and the total marks of all practical sessions will be suitably mapped down to a max. of 60."
+ },
+ {
+  "id": "c113",
+  "page": 32,
+  "section": "Assessment",
+  "text": "[Assessment] 5.4.2 Summative Assessment End semester examination for each practical course is conducted jointly by two examiners. The examiners are appointed by Dean, AAA from the panel of examiners suggested by the respective Heads of the Department. In some cases, one of the examiner may be from outside the institution and will be identified as external examiner. The scheme of assessment may vary depending on the nature of laboratory, which shall be shared with student by the laboratory in -charge. The su mmative assessment will be conducted for a max. marks of 40. The general scheme of assessment is given in Table (4). Table 4: Suggested end-semester summative assessment pattern for P-based courses. Component Marks Examiner 1 Examiner 2 Total Objective & Procedure write up including outcomes 4 4 08 Experimentation and data collection 4 4 08 Computation of results 4 4 08 Analysis of results and Interpretation 4 4 08 Viva Voce 0 8 08 Total Marks 16 24 40"
+ },
+ {
+  "id": "c114",
+  "page": 32,
+  "section": "Assessment",
+  "text": "[Assessment] 5.5 Assessment and Grading of MOOCs based elective Whenever a candidate opts for a course through MOOCS offered via Swayam platform, he / she has to learn and undergo assessment as per norms set by VFSTR for such MOOCs Courses. Upon the declaration of the result, that the candidate has successfully completed the course, the candidate is said to have earned the credits under credit equivalence and credit transfer."
+ },
+ {
+  "id": "c115",
+  "page": 32,
+  "section": "Assessment",
+  "text": "[Assessment] 5.6 Inter-departmental Project / Field Projects Inter departmental project / Field Projects work is undertaken in the even semester of II and III-year of programme for earning 1 credit per project by each candidate. It is expected that the se inter-departmental projects result in publication of a technical paper in a peer -reviewed journal / top-notch conference. For this purpose, Heads of Department will identify and appoint faculty mentors who offer technical expertise/ guidance to students for defining clear, achievable objectives and milestones for their projects"
+ },
+ {
+  "id": "c116",
+  "page": 33,
+  "section": "Assessment",
+  "text": "[Assessment] 5.6.1 Formative Assessment The assessment will be carried in a systematic way wherein first review is conducted during module-1 and second review during module-2 period. The detailed assessment guidelines and scheme are to be announced along with the assessment schedule as mentioned in the Table (5). Table 5: Schedule and parameters followed for formative assessment. Module Schedule Review Points to be considered Formative assessment marks Module - 1 7th – 8th week Review - 1 - Identification of specific area out of broad areas under the supervisor - Identification of outcomes in line with programme objectives. - Identification of tools / equipment / surveys / training needs / etc. - Completion of literature survey - Readiness of about 25% documentation 30 Module - 2 15th – 16th week Review - 2 - Presentation of results, analyses and conclusions - Meeting of objectives defined in first review - Preparation of report - Understanding by individual students on the overall project 30"
+ },
+ {
+  "id": "c117",
+  "page": 33,
+  "section": "Assessment",
+  "text": "[Assessment] 5.6.2 Summative Assessment Summative assessment will be done jointly by two examiners (both from VFSTR) wherein one as internal examiner and the other as external examiner. These examiners will be appointed by Dean -AAA from the panel of examiners suggested by the respective Head of the Department. The scheme of asse ssment will be report (15 marks), presentation (10 marks) and demonstration (15 marks) respectively. Points to be considered during the review. a. Presentation of results, analyses and conclusions b. Meeting of objectives defined in first review c. Preparation of report d. Understanding by individual students on the overall project e. Individual student contribution"
+ },
+ {
+  "id": "c118",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] 5.7 Project Those students who do not opt for the semester -long internship, carry out their major project at VFSTR and submit their report which is a mandatory requirement for the award of degree. These projects are usually done in batches (not exceeding five students in a batch), during the VIII semester, under the guidance of a faculty member. Every batch, in consultation with the guide, should define the project and also the probable procedure of carrying it out and submit the same to a committee consisting of 2 to 3 faculty members appointed by Head of the Department."
+ },
+ {
+  "id": "c119",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] This is to avoid the repetition and also to come up with a roadmap for completion of the project within the time stipulated. The students are encouraged to select topics related to ongoing research and consultancy projects. The students are expected to carry out and present a survey of literature on the topic, work out a project plan and its implementation through experimentation / modelling / simulation / computation. They are also expected to exhibit system analysis, design, and presentation and evaluation skills."
+ },
+ {
+  "id": "c120",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] The entire process of grouping of student batches, and identification of respective guides etc., is to be completed by the end of VII semester, so that students can start of their project work immediately after VII semester."
+ },
+ {
+  "id": "c121",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] 5.7.1 Formative Assessment The progress of project is reviewed twice in a module by the Project Review Committee (PRC) and formative assessment marks are awarded based on these reviews. The Project review committee consists of"
+ },
+ {
+  "id": "c122",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] c) Project supervisor – member Review schedules of PRC are to be announced by the department immediately after the commencement of class work. The review presentations are open to all the students of that section and attendance is compulsory. The first review should be of 15 minutes / batch; the remaining reviews should be around 30 minutes / batch. Before every review the batches should submit their PPT along with a brief report of not exceeding two pages. It is to be expected by the committee that student communicates/publishes research article based on the project work prior to graduation."
+ },
+ {
+  "id": "c123",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] The following aspects may be considered by the committee for assessment Table (6). Table 6: Schedule and suggested parameters to be considered for formative assessment. Module Schedule Review Points to be considered Max. Marks Module -1 4th week First review - Identification of specific area out of broad areas. - Identification of outcomes in line with programme objectives - Feasibility of contributing to the attainment of outcomes 15 8th week Second review - Identification of tools / equipment / training needs / etc."
+ },
+ {
+  "id": "c124",
+  "page": 34,
+  "section": "Assessment",
+  "text": "[Assessment] - Understanding by individual students on the overall aspect of the project - Completion of literature survey - Design of project set up 15 Module – 2 12th week Third review - Acquisition / learning of the tool required - Readiness of the layout of the project report - Progress review as per mechanism/ schedule identified - Individual student contribution in above activities 15 16th week Fourth review - Presentation of results and conclusions - Meeting of objectives defined in first review - Submission of draft report - Understanding by individual students on the overall project - Individual student contribution - Progress of project as per schedule 15"
+ },
+ {
+  "id": "c125",
+  "page": 35,
+  "section": "Assessment",
+  "text": "[Assessment] 5.7.2 Summative Assessment At the end of the semester, during 18th to 20th week of the semester the summative assessment will be conducted in two phases. Phase–I (during 18th -19th week): This is an evaluation for a max of 20 marks. A committee of two members comprising of HoD's nominee and Guide will assess the project work which will involve going through the project report (6 marks), project presentation (7 marks) and demonstration of the project (7 marks). Phase–II (during 20th week): A final presentation and defense assessment for a max."
+ },
+ {
+  "id": "c126",
+  "page": 35,
+  "section": "Assessment",
+  "text": "[Assessment] of 20 marks will be carried out by one -man committee composed of an external expert who is chosen by the Dean AAA fr om a panel of examiners suggested by the HoD. The format for evaluation will involve going through the project report's quality (6 marks), presentation (6 marks) and interaction and defense (8 marks). The qualifying marks will be finalized considering the marks scored in both the phases (I & II) of summative assessment. In case the candidate is placed in 'I' grade, he/she has to appear for both Phase -I and Phase-II assessments, which will be held within the 15 days after declaration of results. In the consecutive assessment also if the candidate fails to secure min."
+ },
+ {
+  "id": "c127",
+  "page": 36,
+  "section": "Assessment",
+  "text": "[Assessment] 5.8 Semester-long Internship Internship work is undertaken either in the VII or VIII semester by a student in an industry, under the j oint supervision of industry personnel and an internal faculty member. Sixty percentage of the marks of Internship are allotted through continuous evaluation as formative assessment and the remaining 40% are based on end semester assessment. Table 7: Assessment scheme for Internship reviews. Module Review Schedule Formative assessment marks Module -1 First review 4th week 15 Second review 8th week 15 Module – 2 Third review 12th week 15 Fourth review 16th week 15 Total 60"
+ },
+ {
+  "id": "c128",
+  "page": 36,
+  "section": "Assessment",
+  "text": "[Assessment] a) The progress of internship work is reviewed twice in every module by the \"Internship Review Committee\" and marks for formative assessment are awarded based on these reviews."
+ },
+ {
+  "id": "c129",
+  "page": 36,
+  "section": "Assessment",
+  "text": "[Assessment] b) The Internship Review Committee (IRC) consists of Head of Department or his/her nominee (Chairperson), the internal and external (industry) supervisors."
+ },
+ {
+  "id": "c130",
+  "page": 36,
+  "section": "Assessment",
+  "text": "[Assessment] c) The IRC may not be the same for all students; however, the same IRC should exist for entire duration of the internship program of any single student."
+ },
+ {
+  "id": "c131",
+  "page": 36,
+  "section": "Assessment",
+  "text": "[Assessment] d) The schedule and the scheme of evalu ation are to be announced with internship notification. The internship reviews may take place at the place of internship or at the university, as decided by the interning organization or may be conducted in the blended mode."
+ },
+ {
+  "id": "c132",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] 5.8.1 Formative assessment: Internal reviews at the place of internship The internal supervisor will interact with the guide allotted at internship offering industry based on the schedule given to conduct the reviews. Scheduled reviews can be conducted by IRC on online mode for disc ussion/ presentation. The 15 marks obtained by students for each review will be scaled to allotted marks as given in Table (7)."
+ },
+ {
+  "id": "c133",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] a) Students should submit a report (not more than two pages) explaining about the progress of their work, mentioning clearly de tails like the machines or software handled / adopted, type of data collected and his/her understanding and contribution in the programme, and the same has to be presented before the supervisors."
+ },
+ {
+  "id": "c134",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] b) The candidate should clearly present the completion of s tipulated assignments set by the industry supervisor for that period."
+ },
+ {
+  "id": "c135",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] c) The evaluation will be based on a & b above and also based on regularity and discipline maintained in the internship venue. Table 8: Suggested scheme of assessment for every review Component Total Regularity and interaction 3 Application of knowledge 2 Gaining of new knowledge /skills / literature survey 5 Internship progress 3 Report 2 Total marks 15"
+ },
+ {
+  "id": "c136",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] 5.8.2 Summative assessment – Internship At the end of the semester, the student shall submit a comprehensive report of internship covering the work done and make a final presentation in two phases as follows: Phase–I (during 18 th -19th week): A committee of two members comprising of internal supervisor and HoD's nominee will assess the overall internship participation by the candidate and his final report through presentation made by the intern. The internship report (6 marks), presentat ion (7 marks) and overall impression (7 marks) during the internship will be evaluated respectively. Phase–II (during 20th week): A final presentation and defense assessment for a max."
+ },
+ {
+  "id": "c137",
+  "page": 37,
+  "section": "Assessment",
+  "text": "[Assessment] of 20 marks will be carried out by one-man committee composed of an external expert who is chosen by the Dean AAA from a panel of examiners suggested by the HoD. The format for evaluation will involve going through the project report's quality (6 marks), presentation (6 marks) and interaction and defense (8 marks). The qualifying marks will be finalized considering the marks scored in both the phases (I & II) of summative assessment. In case the candidate is placed in 'I' grade, he / she has to appear for both Phase-I and Phase-II assessments, which will be held within the 15 days after declaration of results. In the consecutive assessment also if the candidate fails to secure min."
+ },
+ {
+  "id": "c138",
+  "page": 38,
+  "section": "Assessment",
+  "text": "[Assessment] 5.9 Binary graded courses Binary graded courses aim to simplify the grading process and encourage students to focus on learning and achieving the mastery rather than the pursuit of specific grades. Students will enroll in these 1 -credit courses during the I, II and III semesters of programme. Unlike traditional grading systems, binary graded courses offer only two possible outcomes i.e., Pass grade / R -grade. To obtain Pass grade, a candidate should maintain 75% of attendance and secure a minimum of 40% score (i.e. 32 marks out of 80) in each course; else the candidate shall be placed into 'R'-grade. No summative assessment activities for Binary graded courses."
+ },
+ {
+  "id": "c139",
+  "page": 38,
+  "section": "Assessment",
+  "text": "[Assessment] 5.9.1 Formative assessment The assessment will be carried in a systematic way wherein two reviews per module shall be conducted as mentioned in the Table (9). Table 9: Schedule for formative assessment Module Activity Formative assessment marks Module -1 Activity - 1 20 Activity - 2 20 Module -2 Activity - 1 20 Activity - 2 20"
+ },
+ {
+  "id": "c140",
+  "page": 38,
+  "section": "Assessment",
+  "text": "[Assessment] 6.1 Setting of semester-end summative assessment question papers will be coordinated by the lead instructor assigned for a particular course. Two sets of question papers will be submitted latest by 12th week of the semester."
+ },
+ {
+  "id": "c141",
+  "page": 38,
+  "section": "Assessment",
+  "text": "[Assessment] 6.2 There shall be 'Summative Asse ssment Question Paper Scrutiny Committee' which would be constituted with external experts. Experts are empowered to modify / rephrase the questions to maintain a high standard of the semester -end assessment. The review should be completed by the 14th week of the semester. The review process will be coordinated by a committee of School Dean, HoDs and external experts."
+ },
+ {
+  "id": "c142",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 6.3 The question wise marks scored in the summative assessment out of a total of 60 will be made available online within two weeks from the last date of examination and would be kept active for 24 hours. Latest by the end of 48 hours from the instant of notification any candidate can submit an appeal online providing question wise claim."
+ },
+ {
+  "id": "c143",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 6.5 The appeals will be attended within next three working days. Fees for appeal, as decided from time to time, has to be remitted online along with the appeal."
+ },
+ {
+  "id": "c144",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 6.7 Final results and grades shall be announced within four weeks of completion of the last examination of the summative assessment (within two weeks from the last date of appeal). Grades are published on the University website, and also informed to the parents and students through SMS."
+ },
+ {
+  "id": "c145",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 6.8 Provisional Grade cards will be issued within two weeks after the announcement of grades. Grade card will contain three parts. Part 1: Details of successfully completed courses. Part 2: Details of 'I' grade courses. Part 3: Details of 'R' grade courses. 7 COMPUTATION OF GRADING"
+ },
+ {
+  "id": "c146",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 7.1 Formative assessment decides the list of 'R' - candidates. Therefore, these candidates will not be considered for grading computation. Summative assessments decide the list of 'I' candidates. Therefore, these candidates will not be considered for gradin g computation."
+ },
+ {
+  "id": "c147",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 7.2 The candidates who have successfully completed both formative and summative assessments will be considered for computation of relative grading."
+ },
+ {
+  "id": "c148",
+  "page": 39,
+  "section": "Assessment",
+  "text": "[Assessment] 7.3 Threshold value ( Th) for relative grading in each course is arrived after studying the marks distribution in that course by a committee constituted by office of Dean AAA. The threshold value is decided by the upper bound marks of the major chunk of the class keeping the top outlier scores away from consideration (the least upper bound). The threshold value will be slightly greater than upper bound marks or may be equal to the upper bound marks."
+ },
+ {
+  "id": "c149",
+  "page": 40,
+  "section": "Assessment",
+  "text": "[Assessment] 7.4 The total marks (m) = marks scored in the formative assessment + marks scored in the summative assessment is transformed into relative grade expr essed accurate to two decimal places as follows: Relative grade point (P) = (m/Th) X 10 [and limited to 10]"
+ },
+ {
+  "id": "c150",
+  "page": 40,
+  "section": "Assessment",
+  "text": "[Assessment] 7.5 If students require course wise percentage equivalence, then the calculation will be based on the following Course wise percentage equivalence = (m/Th) X100 [truncated to two-digit integer and limited to 100]"
+ },
+ {
+  "id": "c151",
+  "page": 40,
+  "section": "Assessment",
+  "text": "[Assessment] 7.6 After relative grading, a student is assigned a 'Letter Grade (G)' for each course as per Table (10). The grade and the corresponding letter grade represent the outcomes and assessments of a student's performance in a course. Table 10: Grading information Relative Grading Range (P) Category Grade (G) ≥ 9.50 Outstanding O ≥ 8.50 to 9.49 Excellent S ≥ 7.00 to 8.49 Very good A ≥ 6.00 to 6.99 Good B ≥ 5.00 to 5.99 Fair C ≥ 4.00 to 4.99 Marginal M Transitional Grade Repeat R Transitional Grade Incomplete I"
+ },
+ {
+  "id": "c152",
+  "page": 40,
+  "section": "Assessment",
+  "text": "[Assessment] 8.1 The supplementary examinations shall be conducted once in summer semester. Notifications will be released by the examination section informing the students about registration procedures, details of fee and timetables. Apart from these examinations the students who have courses with 'I' -grade can also write the supplementary examinations along with regular semester -end examinations of that academic (Odd / Even) semester."
+ },
+ {
+  "id": "c153",
+  "page": 40,
+  "section": "Assessment",
+  "text": "[Assessment] 8.2 Whenever a candidate clears courses with 'I' grade in a supplementary examination that are conducted during a regular semester, the Threshold value for computing his / her grade will be obtained from the same batch in which he / she had completed his/her formative assessment."
+ },
+ {
+  "id": "c154",
+  "page": 41,
+  "section": "Assessment",
+  "text": "[Assessment] 8.3 Whenever a candidate clears courses with 'R' / 'I' gr ade in a summer semester, the Threshold value for computing his / her grade will be carry forwarded from the preceding Odd / Even semester for the respective courses."
+ },
+ {
+  "id": "c155",
+  "page": 41,
+  "section": "Assessment",
+  "text": "[Assessment] 8.4 Whenever a candidate clears courses with a 'R' grade in a regular semester along wit h his/ her junior batch then for this candidate the Threshold value will be corresponding to his/her junior batch for computing grade."
+ },
+ {
+  "id": "c156",
+  "page": 41,
+  "section": "Assessment",
+  "text": "[Assessment] 8.5 The results of summative assessment of Project / Internship will be announced only if the candidate successfully earns all the credits in courses registered during the program. If the candidate is with 'R' / 'I' graded courses the results will be kept under 'Announced Later (L)' status and will be announced only after candidate clears these courses."
+ },
+ {
+  "id": "c157",
+  "page": 41,
+  "section": "Grade Point Average",
+  "text": "[Grade Point Average] 9. GRADE POINT AVERAGE The Academic Performance of a student in every semester is indicated by the Semester Grade Point Average (SGPA) and finally by Cumulative Grade Point Average (CGPA)."
+ },
+ {
+  "id": "c158",
+  "page": 41,
+  "section": "Grade Point Average",
+  "text": "[Grade Point Average] 9.1 SGPA The Semester Grade Point Average (SGPA) shall be comput ed using the formula given below: Where n = number of courses a student successfully completed in the semester under consideration Pi = Grade points secured for the i th course registered in the semester under consideration. Ci = the number of credits assigned to i th course registered in the semester under consideration"
+ },
+ {
+  "id": "c159",
+  "page": 41,
+  "section": "Grade Point Average",
+  "text": "[Grade Point Average] 9.2 CGPA The Cumulative Grade Point Average (CGPA) shall be computed after successful completion of the programme. The CGPA shall be expressed in different flavours to reflect B.Tech. of 160 credits, B.Tech. with Research Honours of 180 credits, and different Add-on provisions up to 20 credits leading to Minor / Add-on Diploma/ Add- on certification. Accordingly, the computations will be as below: Where m = total number of courses prescribed for the completion of the programme Pj = grade points secured for the jth course. Cj = the number of credits assigned to jth course and Σ Cj = 160 Σ Cj = 180 for CGPA calculations in case of B.Tech."
+ },
+ {
+  "id": "c160",
+  "page": 41,
+  "section": "Grade Point Average",
+  "text": "[Grade Point Average] with Research honours Σ Cj = 20 for CGPA calculations of specialization part in case of B.Tech. with honours Σ Cj = 180 for CGPA calculations in case of B.Tech. with honours Σ Cj = 20 for CGPA calculations of minor part in case of B.Tech. with Minor Σ Cj = 180 for CGPA calculations in case of B.Tech. with Minor Σ Cj = 20 for CGPA calculations of Add -on Diploma part in case of B.Tech. with Add-on Diploma Σ Cj = 180 for CGPA calculations in case of B.Tech. with Add-on Diploma Σ Cj < 20 for CGPA calculations of Add-on certification part in case of B.Tech. with Add-on certification Σ Cj < 180 for CGPA calculations in case of B.Tech."
+ },
+ {
+  "id": "c161",
+  "page": 42,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] 10. AWARD OF CLASS The students who have become eligible for award of degree shall be classified based on their CGPA secured, as per the Table (11) given below: Table 11: Class/ Division information. Sl. No. CGPA Class / Division 1 7.0 and above First Class with Distinction 2 6.0 and above but less than 7.0 First Class 3 5.0 and above but less than 6.0 Second Class 4 4.0 and above but less than 5.0 Pass Class 5 Less than 4.0 Incomplete / No class"
+ },
+ {
+  "id": "c162",
+  "page": 42,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] a) For the purpose of rewarding the accomplishers with ranks and awards, toppers in each branch discipline are identified, based on their academic performance (CGPA) in the following categories:"
+ },
+ {
+  "id": "c163",
+  "page": 43,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] b) In addition, the 'Chairman's gold medal' and other 'Endowment Awards' are awarded to the 'outstanding students' based on the overall performance which includes academic, co -curricular and extra -curricular activities, campus placements and competitive ex aminations. A committee appointed by the Vice -Chancellor will recommend the eligible student for the award, selected from the nominations received from the departments."
+ },
+ {
+  "id": "c164",
+  "page": 43,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] c) In addition, the institution may recognize exceptional performance such as music, dance, sports etc. and display of exceptional bravery from time to time."
+ },
+ {
+  "id": "c165",
+  "page": 43,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] d) Only such candidates who complete 160 credits (+20 credits) in the first 8 successive semesters shall be eligible to receive awards/ ranks."
+ },
+ {
+  "id": "c166",
+  "page": 43,
+  "section": "Award Of Class",
+  "text": "[Award Of Class] e) The candidates availing spill over semesters will not be eligible for the award of merit scholarships."
+ },
+ {
+  "id": "c167",
+  "page": 43,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 11. AWARD OF DEGREE On successful completion of prescribed requirements of the programme, the degree shall be conferred during the convocation of the VFSTR. For the conferment of degree, the student has to fulfill the following requirements:"
+ },
+ {
+  "id": "c168",
+  "page": 43,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] a) a bonafide student and undergone the course work of not less than four academic years and not more than seven academic years from the date of joining."
+ },
+ {
+  "id": "c169",
+  "page": 43,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] e) no in-disciplinary proceedings pending against him / her. Consequent upon being convinced, following an enquiry, the Academic council may resolve to withdraw the degree / diploma / any other certification provided by the institute. The aggrieved may however prefer for a review of such decision by the Academic Council, citing cogent reasons for review or go in for an appeal to the, BoM of the institute."
+ },
+ {
+  "id": "c170",
+  "page": 44,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 12.1 Lateral Entry into II year of B.Tech. The students who have completed their diploma programme in recognized institutes can be admitted into the third semester of the unde rgraduate programme. The committee constituted by Vice-Chancellor, will establish the eligibility of admission into different branches offered by VFSTR. The committee may recommend additional courses to be studied by the candidate, which students will complete during their first year of study at VFTSR however subject to a maximum of 25 credits per semester. To earn B.Tech. degree the student has to earn the same number of credits specified for regular B.Tech. in their 2 nd, 3 rd and 4 th year of study. The stu dent is eligible to register for Add-on credits as presented in section (1.5)."
+ },
+ {
+  "id": "c171",
+  "page": 44,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 12.2 Inter- Institutional Credit Transfer Students pursuing an undergraduate programme in other recognized Higher Education Institute (HEI) could be admitted into VFSTR withou t appearing for the entrance exam to continue their studies, subject to the approval by a committee constituted by Vice-Chancellor. In this case, the student shall furnish the transcripts or grade cards, syllabus copies, educational certificates, and other relevant documents while applying for admission. The committee constituted by Vice -Chancellor, will establish the equivalency based on the marks / credits obtained in the courses in the previous institute by following the Inter- Institutional Credit Transfer policy (Annexure-3). VFSTR students also may earn credits by Inter- Institutional Credit Transfer."
+ },
+ {
+  "id": "c172",
+  "page": 44,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 12.3 Honorable exit with B.Sc. or Engineering Diploma In line with NEP-2020, an optional exit is provided for a candidate who has earned a min. of 120 credits and has completed all the requirements up to the end of six semesters. B.Sc. degree / Engineering Diploma will be awarded in respective branches of specialization. Candidates opted to exit with Engineering Diploma will also be awarded with B.Sc. equivalence certificate in case of disciplines existing in the University system. In case the candidate fails to earn 120 credits, a suitable certification will be awarded during his / her exit from B.Tech. degree."
+ },
+ {
+  "id": "c173",
+  "page": 44,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] Semester-wise transcript and a consolidated transcript will be given to the candidates during their exit from the registered program. Such a candidate who has exited can seek re -entry to complete B.Tech. by surrendering the B.Sc. Degree / Engineering Diploma. A committee constituted by Vice-Chancellor will scrutiny all such re -entry requests and recommend the plan of action. However, the max. duration of programme should be limited to seven years and further extension beyond the stipulated max. duration of study has to be approved by Academic Council, if the candidate appeals for an extension."
+ },
+ {
+  "id": "c174",
+  "page": 45,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 12.4 Volunteer 'Drop' with Sabbatical Semester option A candidate may exercise his option to voluntarily exit from B.Tech. programme temporarily for a semester during the B.Tech. programme, by registering for a 'DROP option' in the beginning of the semester. The DROP can be exercised to take up special Internship / Innovation / Exploratory / Entrepreneurship / Advanced research / Start - up and such related activities. Under such circumstances a candidate can normally avail DROP over two successive semesters. Such 'Drop' semester will be identified as Sabbatical semesters."
+ },
+ {
+  "id": "c175",
+  "page": 45,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] Such a candidate has to pay the regular semester fee if such a Drop option is utilized during the first 8 semesters of B.Tech., and has to pay a nominal semester maintenance fee during the spill over period, if a candidate has not yet complete d the credit requirements. Upon returning from such a temporary exit, a candidate may continue his B.Tech. studies utilizing the provision of spill over period. A candidate may also submit a claim for Credit equivalence for the activities undertaken during the sabbatical period."
+ },
+ {
+  "id": "c176",
+  "page": 45,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] The equivalence committee would evaluate and assess the academic equivalence of the work carried out and would recommend the credit equivalence and credit transfer to be granted together with the grades that could be attributed, if applicable. However, the max. duration of programme should be limited to seven years and further extension beyond the stipulated max. duration of study has to be approved by Academic Council, if the candidate appeals for an extension."
+ },
+ {
+  "id": "c177",
+  "page": 45,
+  "section": "Award Of Degree",
+  "text": "[Award Of Degree] 12.5 Volunteer 'Drop' with Semester Drop option A candidate may exercise his option to voluntarily exit from B.Tech. programme temporarily for a semester during the B.Tech. programme, by registering for a 'DROP option' in the beginning of the semester to meet the family / personal exigencies. All the norms as mentioned in the section (12.4) shall be applicable for the candidates utilizing semester drop option."
+ },
+ {
+  "id": "c178",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 13. CHANGE OF BRANCH DISCIPLINE The students can request for change of branch after completing the first two semesters of study. One percent of the seats in each branch subject to a minimum of one seat is made available for accommodating such requests. These requests are considered subject to the following conditions:"
+ },
+ {
+  "id": "c179",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] a) Top one percent of the students in each branch based on CGPA at the end of the second semester subject to a minimum of one student in each branch are eligible for a change of branch."
+ },
+ {
+  "id": "c180",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] b) If only one student is eligible from a branch and if he / she is not willing to change specialization, the opportunity can be availed by the second or third ranker of the branch in that order."
+ },
+ {
+  "id": "c181",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] d) The student opting for a change should have completed all the credit requirements of the first two semesters."
+ },
+ {
+  "id": "c182",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] e) The decision of the Institution is final in this regard. All the above points are applicable for branch change cases based on th e merit criterion. There may be branch change requests of another kind, from the students who are not able to cope up with the studies of the branch they are admitted into. All such requests are to be referred to a committee constituted for the purpose. The committee takes the decision based on the merit of each case, the availability of seats and various other factors. The decision of the committee in this regard is final. Because there is a difference of one or two courses in the first year curriculum amo ng different specializations, when the student changes his specialization after completing first year, he / she is required to complete those first year courses of the new specialization which were not studied by him/her during the first year, which can be taken up in the immediate summer semester."
+ },
+ {
+  "id": "c183",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] a) The academic rules and regulations should be read as a whole for the purpose of any interpretation."
+ },
+ {
+  "id": "c184",
+  "page": 46,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] b) For the matter(s) NOT covered herein above or for unforeseen circumstances, but arising during the course of the implementation of the above regulations. The Vice - Chancellor shall be authorized to remove the difficulties and decide upon the matters. The same shall be reported in the next meeting of Academic Council for ratificati on and subsequently informed to BoM."
+ },
+ {
+  "id": "c185",
+  "page": 47,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] c) The Institution may change or amend the academic rules and regulations or curriculum at any time, and the changes or amendments made shall be applicable to all the students with effect from the dates, notified by the Institution."
+ },
+ {
+  "id": "c186",
+  "page": 47,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] d) Procedure and explanation to any section can be floated by the office of Dean AAA as applicable from time to time with due approval by the chairman of Academic Council. ANNEXURE -1 SUPPLEMENT REGULATION FOR PURSUING B.TECH. WITH RESEARCH HONOURS (SPECIALIZATION: XX) A candidate willing to transform his / her B.Tech. programme into research orientation should meet the following terms and conditions."
+ },
+ {
+  "id": "c187",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 1. He / she should register add-on credits for Honours specializing in a particular stream XX in his discipline of study."
+ },
+ {
+  "id": "c188",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 2. He / she should have maintained a CGPA of 8.0 up to the end of 4th semester (II-year Even semester)."
+ },
+ {
+  "id": "c189",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 3. He / she should have successfully completed all the credit requirem ents up to the end of 4th semester."
+ },
+ {
+  "id": "c190",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 4. He / she should indicate willingness to transfer his/her study from B.Tech. with Honours to B.Tech. with Research Honours during the Module -2 period of III year - Odd semester (5th Semester), when the applications are fl oated by the office of the Dean AAA for the purpose."
+ },
+ {
+  "id": "c191",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 5. He / she has to appear for an aptitude test / interaction and the corresponding committee of experts constituted for the purpose has to recommend his / her name."
+ },
+ {
+  "id": "c192",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 6. All recommended candidates may take up research project in a research lab / a research institution/ an institute of repute / a research organization or in the department of VFSTR."
+ },
+ {
+  "id": "c193",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 7. All such candidates may compete for research internship support from the external research institutions or may be supported with research internship within VFSTR. This internship support will be for one full semester duration during his 8th semester extendable by one or two months during the Summer semester that falls in the sequel to 8th semester, in which case the extended period will be treated as 8th semester itself."
+ },
+ {
+  "id": "c194",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 8. Such candidates are normally expected to pursue research in the area of specialization chosen for B.Tech. with Honours study."
+ },
+ {
+  "id": "c195",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 9. Such candidates should register for a course on Research Methodology in III year - II semester as Open elective-3."
+ },
+ {
+  "id": "c196",
+  "page": 48,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 10. Such candidates should have identified a broad research problem by the end of 6th semester, as a part of his / her Module -2 requirement in the course on Research Methodology (Open elective-3)."
+ },
+ {
+  "id": "c197",
+  "page": 49,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 11. In the 7th semester (IV year- I semester) he / she has to take up Research preliminaries for his / her Honours - 4 credit requirements. This will be a research project work by itself in the broad area of the proposed research problem. The candidate shall be able to complete a good literature survey, execute basic / pr eliminary implementations and by the end of module-2 of Honours – 4, he / she should have identified the specific research problem on which he / she will take up research during 8 th semester. The entire course (Honours - 4) will be evaluated as per the requirements of a project work."
+ },
+ {
+  "id": "c198",
+  "page": 49,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 12. The candidate takes up the intensive research work during IV year – II semester for 16 credits (which is combined project work of 12 credits and Honours-5 of 4 credits). He / she should spend a minimum duration of 5 months on the research work. If required, he / she will be considered for research internship period in the extended period also. In fact, he/ she may conserve time by starting the research work immediately after the completion of 7th semester. Thus a candidate sh ould have successfully earned 160 + 20 = 180 credits following the aforementioned procedure to qualify for B.Tech."
+ },
+ {
+  "id": "c199",
+  "page": 49,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] in YY Engineering with Research Honours (Specialization: XX). ANNEXURE – 2(a) SUPPLEMENT REGULATION FOR PURSUING DUAL B.TECH. + M.TECH. DEGREE The proposal to institute Dual B.Tech. + M.Tech., in line with the practices in Institutions of National Importance, is to elevate the Gross Qualification Index (GQI) of India, and specifically to enhance the technological/ engineering competency of the Technocrats. In order to attract the committed learners towards earning M.Tech. immediately after B.Tech. the following scheme is proposed:"
+ },
+ {
+  "id": "c200",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 1. Every candidate should express his / her provisional intent at the time of B.Tech. admission for pursuing Dual B.Tech. + M.Tech. degree. However, he / she can exercise his option to change his intent and final confirmation should be submitted by the end of III-year B.Tech. programme (VI semester) for Dual degree."
+ },
+ {
+  "id": "c201",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 2. A candidate needs to be well informed about the advantages that he / she will reap by completing a Master's degree in one stretch as an immediate follow up to B.Tech. degree program. Such M.Tech. program could enhance his orientation to research studies and could elevate as a researcher."
+ },
+ {
+  "id": "c202",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 3. To make the proposal very attractive, the scheme incorporated to effectively reduce the study period from 4+2 = 6 years to around five years only by exploiting the continuity of the study sustaining the tempo and through making use of two Summer semesters between III & IV year and between IV & V year, and still technically maintaining the requirement to complete 8 semesters of B.Tech. + 4 semesters of M.Tech. = 12 Semesters intact. A candidate willing to continue Dual B.Tech. + M.Tech. instead of regular B.Tech. programme should follow the following terms, conditions and procedures:"
+ },
+ {
+  "id": "c203",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 1. He / she should be a candidate maintaining his studentship through proper registration process of his B.Tech. programme."
+ },
+ {
+  "id": "c204",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 2. He / she can exercise his / her option to earn Add -on credits up to 20 along with his / her regular B.Tech. to receive B.Tech. with Honours / with Minor / with Add -on Diploma."
+ },
+ {
+  "id": "c205",
+  "page": 50,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 3. He / she should have completed all the credit requirements up to the end of 5th semester successfully with a CGPA of at least 7.5. the candidate is expected to likely to complete 6th semester successfully and to maintain the CGPA of at least 7."
+ },
+ {
+  "id": "c206",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 4. He / she should indicate his willingness to continue his study in Dual B.Tech. + M.Tech. during the Module-2 period of III-year – Even semester (6th semester). When the call is given by the office of the Dean AAA for the purpose."
+ },
+ {
+  "id": "c207",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 5. He / she has to appear for an aptitude test / interaction and the corresponding committee of experts constituted for the purpose has to recommend his / her name."
+ },
+ {
+  "id": "c208",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 6. The candidate formally enrolls for Dual B.Tech. + M.Tech. by the end of VI semester before the semester-end summative assessment period of VI semester."
+ },
+ {
+  "id": "c209",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 7. The study pattern will be as follows: Period M.Tech. semester count Cumulative semester count Expected study coverage Sandwiched summer semester between III & IV year I semester 7th semester 14 credits of M.Tech. aligning with M.Tech. Odd semester Regular VII semester - Regular B.Tech. VII semester - 8th semester As per B.Tech VII semester curriculum Regular VIII semester II semester - Internship/ Project 12 credits of B.Tech. is suspended. - 4 credits of Honours/ Minor would continue in 9 th semester 16 credits of M.Tech. aligned with M.Tech."
+ },
+ {
+  "id": "c210",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] even semester Sandwiched summer semester between IV & V year III semester 10th semester Remaining core/ electives required in M.Tech. - 14 credits Regular odd semester in V year Suspended B.Tech. VIII semester credits as a preamble to M.Tech. project work 11th semester - Internship/ project work 12 credits corresponding to B. Tech. - 4 credits of IV semester of M. Tech. on Research methodology - 4 credi ts of IV semester of M. Tech. on preliminary Research work with a project Regular even semester in V year IV semester - 12th semester Research project of M. Tech."
+ },
+ {
+  "id": "c211",
+  "page": 51,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 16 credits. - If required IV semester may be extended by 1 or 2 months to complete the research work. Thus the credit requirements specified for both B.Tech. and M.Tech. are satisfied along with the 12 semester requirement for B.Tech. and M.Tech. put together - B.Tech. degree = 160 + 20 Add-on credits (opted) - M. Tech degree = 68 (14+ 16 +14 +08 +16 credits) A higher research orientation is created."
+ },
+ {
+  "id": "c212",
+  "page": 52,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 8. In the convocation after V year the candidate receives both the degrees B. Tech. & M. Tech. under dual mode."
+ },
+ {
+  "id": "c213",
+  "page": 52,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 9. The candidate should not opt for campus placements during III year / IV year beginning. He / she will be permitted to pursue for campus placement during 4th year end / 5th year."
+ },
+ {
+  "id": "c214",
+  "page": 52,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 10. Such a candidate may try for fellowship support during V year if he / she gets qualified in GATE; such candidates may also be eligible for support consideration by VFSTR during V year."
+ },
+ {
+  "id": "c215",
+  "page": 52,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 11. Such a candidate during his / her V year could be considered as Teaching cum Research Assistant and suitable compensation may be provided for his / her association as a Teaching Assistant in the VFSTR campus. The proposed Dual B.Tech. + M.Tech. may be offered as a customized Dual B.Tech. + M.Tech. program jointly with an Industry for the candidates freshly placed in that industry. Then the orientat ion would be towards on -Job training, Advanced Industry skills and Job basis internship & project work. ANNEXURE – 2(b) SUPPLEMENT REGULATION FOR PURSUING DUAL B.Tech. + MBA DEGREE The proposal to institute Dual B.Tech. + MBA, in line with the practices in Institutions of National Importance, is to elevate the Gross Qualification Index (GQI) of India, and specifically to enhance the technological / management competency of the Technocrats. In order to attract the committed learners towards earning MBA imm ediately after B.Tech. the following scheme is proposed:"
+ },
+ {
+  "id": "c216",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 1. Every candidate should express his / her provisional intent at the time of B.Tech. admission for pursuing Dual B.Tech. + MBA degree. However, he / she can exercise his option to change his intent an d final confirmation should be submitted during the III semester of B.Tech. programme for Dual degree."
+ },
+ {
+  "id": "c217",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 2. A candidate needs to be well informed about the advantages that he / she will reap by completing a Master's degree in one stretch as an immediate follow up to B.Tech. degree program. Such MBA program could enhance his orientation to management studies and could elevate as a Manager / Entrepreneur."
+ },
+ {
+  "id": "c218",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 3. To make the proposal very attractive, the scheme incorporated to effectively reduce the study period from 4+2 = 6 years to around five years only by exploiting the continuity of the study sustaining the tempo and through making use of two Summer semesters between III & IV year and between IV & V year, and still technically maintaining the requirement to complete 8 semesters of B.Tech. + 4 semesters of MBA = 12 Semesters intact. A candidate willing to continue Dual B.Tech. + MBA instead of regular B.Tech. programme should follow the following terms, conditions and procedures:"
+ },
+ {
+  "id": "c219",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 1. He / she should be a candidate maintaining his studentship through proper registration process of his B.Tech. programme."
+ },
+ {
+  "id": "c220",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 2. He / she should opt Engineering Management stream as Minor during regular B.Tech and the 20 credits earned in Minor will be considered for extension into dual B.Tech. + MBA."
+ },
+ {
+  "id": "c221",
+  "page": 53,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 3. He / she should have completed all the credit requirements up to the end of 3rd semester successfully and the candidate is expected to likely to complete 4 th semester successfully."
+ },
+ {
+  "id": "c222",
+  "page": 54,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 4. He / she should indicate his willingness to continue his study in Dual B.Tech. + MBA during the Module-2 period of II-year – odd semester (3th semester). When the call is given by the office of the Dean AAA for the purpose."
+ },
+ {
+  "id": "c223",
+  "page": 54,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 5. The study pattern will be as follows: Period MBA semester count Cumulative semester count Expected study coverage Regular B.Tech. IV Semester - 4th semester 4 credits of Management Minor Regular B.Tech. V Semester - 5th semester 4 credits of Management Minor Regular B.Tech. VI Semester - 6th semester 4 credits of Management Minor Sandwiched summer semester between III & IV year I Year I semester 7th semester 16 credits of MBA Regular B.Tech. VII semester - 8th semester 4 credits of Management Minor Regular B.Tech."
+ },
+ {
+  "id": "c224",
+  "page": 54,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] VIII semester - 9th semester 4 credits of Management Minor Sandwiched summer semester between IV & V year I Year II Semester 10th semester 16 credits of MBA Regular odd semester in V year II Year I semester 11th semester 20 credits of MBA Regular even semester in V year II Year II semester 12th semester Internship of MBA 12 credits Thus the credit required of both B.Tech. and MBA are satisfied along with the 12 semester requirement for B.Tech. and MBA put together - B.Tech. degree = 160 - MBA degree = 64 (16+ 16 +20 +12 credits) +20 Add -on credits (opted in B.Tech. for Management minor) - Total credits = 160 + 20 + 64 = 244"
+ },
+ {
+  "id": "c225",
+  "page": 54,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 6. In the convocation after V year the candidate receives both the degrees B. Tech. & MBA under dual mode."
+ },
+ {
+  "id": "c226",
+  "page": 54,
+  "section": "Change Of Branch Discipline",
+  "text": "[Change Of Branch Discipline] 7. The candidate should not opt for campus placements during III year / IV year beginning."
+ }
+]
