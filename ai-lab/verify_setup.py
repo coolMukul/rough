@@ -3,7 +3,7 @@ Check that this machine is ready for the lab.
 
     python verify_setup.py
 
-Runs seven checks and prints PASS or FAIL for each, with the fix for
+Runs eight checks and prints PASS or FAIL for each, with the fix for
 anything that fails. Safe to run as many times as you like.
 
 In Google Colab, run this instead, in a cell:
@@ -168,13 +168,24 @@ def _key():
     return f"from {source}, ...{key[-4:]}"
 
 
+@check("A usable model is available")
+def _model_pick():
+    from labkit import resolve_model
+    key, _ = load_key()
+    chosen = resolve_model(key, verbose=False)
+    if not chosen:
+        raise RuntimeError("provider listed no usable chat model")
+    os.environ["LLM_MODEL_RESOLVED"] = chosen
+    return chosen
+
+
 @check("The model answers")
 def _call():
     import requests
     key, _ = load_key()
     url = os.environ.get("LLM_BASE_URL",
                          "https://api.groq.com/openai/v1/chat/completions")
-    model = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
+    model = os.environ.get("LLM_MODEL_RESOLVED") or os.environ.get("LLM_MODEL", "")
 
     response = requests.post(
         url,
@@ -189,8 +200,8 @@ def _call():
     if response.status_code == 401:
         raise RuntimeError("401 unauthorised - the key is wrong or was revoked")
     if response.status_code == 404:
-        raise RuntimeError(f"404 - model '{model}' not available on this provider; "
-                           "check LLM_MODEL against the provider's model list")
+        raise RuntimeError(f"404 - model '{model}' was listed but will not serve; "
+                           "run  python labkit.py  to see what this key can use")
     if response.status_code == 429:
         raise RuntimeError("429 rate limited - wait a minute and run this again")
     if response.status_code != 200:

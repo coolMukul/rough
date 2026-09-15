@@ -31,6 +31,7 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+sys.path.insert(0, str(ROOT))
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--quick", action="store_true", help="skip the full eval sweep")
@@ -54,27 +55,13 @@ banner(0, "Wiring")
 import requests
 
 
-def _load_key():
-    key = os.environ.get("LLM_API_KEY", "").strip()
-    if key:
-        return key
-    env = ROOT / ".env"
-    if env.exists():
-        for line in env.read_text(encoding="utf-8").splitlines():
-            if line.strip().startswith("LLM_API_KEY="):
-                return line.split("=", 1)[1].strip().strip('"').strip("'")
-    try:
-        from google.colab import userdata          # type: ignore
-        return (userdata.get("LLM_API_KEY") or "").strip()
-    except Exception:
-        pass
-    sys.exit("No API key. See SETUP.md.")
+from labkit import load_key, resolve_model
 
-
-API_KEY = _load_key()
+API_KEY = load_key()
 BASE_URL = os.environ.get("LLM_BASE_URL",
                           "https://api.groq.com/openai/v1/chat/completions")
-MODEL = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
+# Asked of the provider rather than hardcoded - model names get retired.
+MODEL = resolve_model(API_KEY, verbose=True)
 
 _calls = 0
 

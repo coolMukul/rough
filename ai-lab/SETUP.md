@@ -114,7 +114,7 @@ The Setup cell already ran this for you. To run it again at any time:
 !python verify_setup.py
 ```
 
-You want to see seven `PASS` lines:
+You want to see eight `PASS` lines:
 
 ```
   Python 3.9 or newer.........................PASS  3.11.9
@@ -123,6 +123,7 @@ You want to see seven `PASS` lines:
   Embeddings match the corpus.................PASS  227 x 384
   Embedding model loads.......................PASS  all-MiniLM-L6-v2
   API key found...............................PASS  from Colab secrets, ...a3f9
+  A usable model is available.................PASS  llama-3.3-70b-versatile
   The model answers...........................PASS  The wire works
 
   All checks passed. You are ready for the session.
@@ -185,7 +186,7 @@ Needs Python 3.9 or newer. The first run downloads about 90 MB for the embedding
 |---|---|---|
 | `401 unauthorised` | The key is wrong, or was deleted | Create a new key and update the secret. Check for a space at either end. |
 | `429 rate limited` | You sent too many requests | Wait 60 seconds and run the cell again. **Do not** keep clicking — that makes it worse. |
-| `404 model not available` | The provider retired that model | Tell the coordinator. One line in the config fixes it for everyone. |
+| `404 model not available` | The provider retired that model | The lab now picks a working model automatically. If you still see this, run `!python labkit.py` to list what your key can use. |
 | `no API key found` | The secret name is wrong, or the toggle is off | Name must be exactly `LLM_API_KEY`. Check the **Notebook access** toggle is on. |
 | `NameError: name 'chat' is not defined` | You skipped an earlier cell | Run **Runtime → Run all**, then carry on from where you were. |
 | Everything suddenly fails | Colab disconnected you for being idle | **Runtime → Restart and run all.** Your typed code is safe. |
