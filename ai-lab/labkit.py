@@ -25,14 +25,20 @@ DEFAULT_BASE = "https://api.groq.com/openai/v1/chat/completions"
 # such as llama-3.3-70b -> llama-3.4-70b still matches "llama" and ranks
 # above an unknown model. Nothing here is required to exist.
 PREFERRED = [
+    "gpt-oss-120b", "gpt-oss-20b",
     "llama-4-maverick", "llama-4-scout",
     "llama-3.3-70b", "llama-3.1-70b", "llama-3-70b",
-    "qwen", "deepseek", "mixtral", "gemma",
+    "qwen3", "qwen", "deepseek", "mixtral", "gemma",
     "llama-3.1-8b", "llama",
+    # Last resort. The compound models run their own internal tool loop, which
+    # makes the agent step of the lab confusing - our loop stops being the only
+    # thing choosing the steps.
+    "compound",
 ]
 
-# Never pick these for chat: they are audio, vision-only, or safety filters.
-EXCLUDE = ("whisper", "tts", "guard", "prompt-guard", "safety", "embed", "vision")
+# Never pick these for chat: audio, speech, safety filters and embedders.
+EXCLUDE = ("whisper", "tts", "orpheus", "guard", "prompt-guard", "safeguard",
+           "safety", "embed", "vision")
 
 
 def load_key():
@@ -60,16 +66,41 @@ def load_key():
     sys.exit("No API key found. See SETUP.md.")
 
 
-def list_models(key, base_url=None):
-    """Ask the provider what this key may actually use. [] if it cannot say."""
+def list_models(key, base_url=None, explain=False):
+    """
+    Ask the provider what this key may actually use.
+
+    Returns [] when it cannot say. Pass explain=True to print why - swallowing
+    the cause turns an expired key, a blocked network and a typo in the base
+    URL into the same unhelpful sentence.
+    """
     base = (base_url or os.environ.get("LLM_BASE_URL", DEFAULT_BASE))
     url = base.split("/chat/completions")[0].rstrip("/") + "/models"
     request = urllib.request.Request(url, headers={"Authorization": "Bearer " + key})
+
+    def note(message):
+        if explain:
+            print(f"  could not list models: {message}")
+
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             payload = json.loads(response.read())
-    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError):
+    except urllib.error.HTTPError as exc:                 # the server answered
+        body = exc.read().decode("utf-8", "replace")[:300]
+        hint = {401: "the key is wrong, revoked, or has a stray space",
+                403: "this key is not allowed to list models",
+                404: f"no models endpoint at {url} - check LLM_BASE_URL",
+                429: "rate limited; wait a minute"}.get(exc.code, "")
+        note(f"HTTP {exc.code} from {url}"
+             + (f" - {hint}" if hint else "") + (f"\n  {body}" if body else ""))
         return []
+    except urllib.error.URLError as exc:                  # never reached it
+        note(f"cannot reach {url} - {exc.reason}")
+        return []
+    except (json.JSONDecodeError, TimeoutError) as exc:
+        note(f"unreadable reply from {url} - {exc}")
+        return []
+
     return [m.get("id", "") for m in payload.get("data", []) if m.get("id")]
 
 
@@ -115,11 +146,25 @@ def resolve_model(key, explicit=None, verbose=False):
 
 if __name__ == "__main__":
     api_key = load_key()
-    models = list_models(api_key)
+    base = os.environ.get("LLM_BASE_URL", DEFAULT_BASE)
+    print(f"\nkey      ...{api_key[-4:]}  ({len(api_key)} chars)")
+    print(f"endpoint {base}\n")
+
+    models = list_models(api_key, explain=True)
     if not models:
-        sys.exit("Could not list models - check the key and the base URL.")
-    print(f"{len(models)} models visible to this key:\n")
+        print("\nNothing to choose from. Most likely causes, in order:")
+        print("  1. The key is not reaching this script. In Colab the Setup")
+        print("     cell must have run first, in this same session.")
+        print("  2. The key is wrong or was revoked - make a new one at")
+        print("     https://console.groq.com/keys")
+        print("  3. Your project blocks model listing. In the Groq console see")
+        print("     Projects -> Limits -> Allow or Block Models.\n")
+        sys.exit(1)
+
+    usable = [m for m in models if not any(b in m.lower() for b in EXCLUDE)]
+    print(f"{len(models)} models visible, {len(usable)} usable for chat:\n")
     for model in sorted(models, key=lambda m: (rank(m), m)):
-        marker = "  " if any(b in model.lower() for b in EXCLUDE) else "->"
-        print(f"  {marker} {model}")
-    print(f"\nWould use: {resolve_model(api_key)}")
+        skipped = any(b in model.lower() for b in EXCLUDE)
+        print(f"  {'   ' if skipped else '-> '}{model}"
+              + ("   (not a chat model)" if skipped else ""))
+    print(f"\nThe lab would use: {resolve_model(api_key)}\n")
